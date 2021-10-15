@@ -1,10 +1,16 @@
+<!--back navigation-->
 <a (click)="goBack()">Back</a>
+
+<!--product details main content-->
 <div class="productDetails-container">
   <div class="container-fluid">
     <div class="row">
+      <!--product image-->
         <div class="col-sm-6 img-container" *ngIf="product" >
           <img src="{{ product.photo }}" alt="hinata" />
       </div>
+
+      <!--product details-->
       <div class="col-sm-6">
         <div *ngIf="product">
           <h2 class="productName" >{{ product.name | uppercase }}</h2>
@@ -12,14 +18,24 @@
           <p>₱{{product.price}} </p>
           <p>{{product.description}}</p>
       </div>
+
+      <!--addutucaatu-->
       <span class="row addToCart-container">
         <button type="button" class="btn btn-outline-warning" routerLink="/addtocart">Add to Cart</button>
   </span>
     </div>
   </div>
-  <div class="row reviews-container">
-    <h1> Reviews </h1>
 
+  <!--review block-->
+  <div class="reviews-container">
+    <h1> Reviews </h1>
+          <span *ngIf="product">
+            <span *ngFor="let reviews of product.reviews">
+               <h5>{{reviews.userName}}</h5>
+               <p><star-rating [rating]='reviews.rating'></star-rating> ({{reviews.rating}}/5)</p>
+              <p>{{reviews.comment}} </p>
+          </span>
+        </span>
   </div>
 </div>
 </div>
