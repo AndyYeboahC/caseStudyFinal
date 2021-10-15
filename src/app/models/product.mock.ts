@@ -3,7 +3,7 @@ import { Product } from './product.interface';
 export const PRODUCTS: Product[] = [
   {
     id: 1,
-    photo: 'assets/uzumaki-naruto.jpg',
+    photo: 'assets/uzumaki-naruto.png',
     name: 'Uzumaki Naruto Vol. 4',
     price: 2999,
     description:
@@ -29,8 +29,35 @@ export const PRODUCTS: Product[] = [
     ],
   },
   {
+    id: 5,
+    photo: 'assets/titan.png',
+    name: 'Colossal Titan',
+    price: 2073.2,
+    description:
+      'These hand-painted collectible figures were created by Iron Studios and are the perfect size for any   desk or shelf no matter the size of your collection. A must-have for fans of Marvel collectibles!',
+    reviews: [
+      {
+        userName: 'Bae Yeah Direct kit_Oh',
+        rating: 4,
+        comment:
+          "This is my first Mini Co collectible and I have to say I am SOLD on these guys! I can't wait to get more of them. I have a rather large Capt. America/Winter Soldier collection and this one is a fine addition! I love these Mini Cos! I'm so glad I checked them out A+A+A+",
+      },
+      {
+        userName: 'Than iLL Leave Can Ammo',
+        rating: 5,
+        comment: 'Great quality, look, and price. Prefect for any Cap fan.',
+      },
+      {
+        userName: 'Sell Queen Lee Love anHero',
+        rating: 5,
+        comment:
+          'This figure/model goes beyond expectations. I have had this item for 2-3 weeks now and am still marvelling at it. The pieces have great attention to detail.',
+      },
+    ],
+  },
+  {
     id: 2,
-    photo: 'assets/hyuga-hinata.jpg',
+    photo: 'assets/hyuga-hinata.png',
     name: 'Hyuga Hinata',
     price: 5299,
     description:
@@ -56,11 +83,11 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 3,
-    photo: 'assets/uchiha-itachi.jfif',
-    name: 'Uchiha Itachi',
+    photo: 'assets/gaara.png',
+    name: 'Yuzawa Gaara',
     price: 8799,
     description:
-      'Itachi is the older brother of Sasuke Uchiha, and is responsible for killing all the members of their clan, sparing only Sasuke. Please note: Due to manual measurement, please allow 1~2 cm error, which will not affect the use.  Toy statues are handmade colors. Due to differences in light, environment and display, products and pictures may have a certain color difference, but will not affect the use, please refer to the actual product.',
+      'Please note: Due to manual measurement, please allow 1~2 cm error, which will not affect the use.  Toy statues are handmade colors. Due to differences in light, environment and display, products and pictures may have a certain color difference, but will not affect the use, please refer to the actual product.',
     reviews: [
       {
         userName: 'CamsAmnida',
@@ -87,30 +114,8 @@ export const PRODUCTS: Product[] = [
     ],
   },
   {
-    id: 4,
-    photo: 'assets/sakura-kinomoto.jpg',
-    name: 'Max Factory Cardcaptor Sakura: Sakura Kinomoto Figma Figure',
-    price: 6448.25,
-    description:
-      'A Max Factory import. From the classic manga series. Smooth yet poseable joint. Includes wand and Kerberos sidekick. Articulated figma stand.',
-    reviews: [
-      {
-        userName: 'Leximborg_11',
-        rating: 5,
-        comment:
-          'Gandizzzz! Pak na pak si Sakura! Kuhang-kuha itsura mula sa anime. Sakit sa bulsa pero worth it!',
-      },
-      {
-        userName: 'AndyLody',
-        rating: 1,
-        comment:
-          'This doll is a curse!!! Gave this as a gift to my girlfriend. But we broke up. She loved it tho. Pero nagsayang lang ako ng pera hayst',
-      },
-    ],
-  },
-  {
-    id: 5,
-    photo: 'assets/li-syaoran.jpg',
+    id: 8,
+    photo: 'assets/li-syaoran.png',
     name: 'Kotobukiya Li Syaoran Cardcaptor Sakura ARTFX J Statue',
     price: 9395,
     description:
@@ -142,105 +147,9 @@ export const PRODUCTS: Product[] = [
     ],
   },
   {
-    id: 6,
-    photo: 'assets/tomoyo-daidouji.jpg',
-    name: 'Banpresto Cardcaptor Sakura Clear Card Q posket Petit vol.1(C:TOMOYO DAIDOUJI), Multiple Colors (BP16948)',
-    price: 785,
-    description:
-      'CARDCAPTOR SAKURA CLEAR CARD figure from Banpresto! Base Stand included. Multiple Colors',
-    reviews: [
-      {
-        userName: 'sakuraChan09',
-        rating: 4,
-        comment:
-          'Tomoyo is so cute!! The action figure is too plain tho, but can’t really complain because it’s cheaper HAHA The box was a little dented good thing the product itself has no damage',
-      },
-    ],
-  },
-  {
-    id: 7,
-    photo: 'assets/dabi.jfif',
-    name: 'Banpresto My Hero Academia Figure Colosseum Vol.2 Dabi (Ver.A) Collectible Figure',
-    price: 1360.5,
-    description:
-      "The Figure Colosseum collection continues with My Hero Academia's villain, Dabi! He's sauntering towards the heroes in a menacing stance, the perfect threat to add to your collection. 6 inches tall, PVC, Imported.",
-    reviews: [
-      {
-        userName: 'herostar54',
-        rating: 4,
-        comment:
-          'Box came slightly dark around the edges. Was it burnt? It smelled of burnt. But the figure is intact.',
-      },
-      {
-        userName: 'FireAndIce',
-        rating: 1,
-        comment:
-          'Wrong item sent. Seller wasn’t responding when I pointed out the box was empty.',
-      },
-      {
-        userName: 'sunsethalo',
-        rating: 5,
-        comment:
-          'Amazing detail! It’s a beautiful addition to my collection. All I need is All For One.',
-      },
-    ],
-  },
-  {
-    id: 8,
-    photo: 'assets/all-might.jpg',
-    name: 'Kotobukiya ARTFX J All Might',
-    price: 5320,
-    description:
-      'The latest character to join Kotobukiya’s ARTFX J lineup from the hit anime series My Hero Academia is All Might! The sculpture was developed based on the concept of ‘facing up against villains.’ All Might comes to life full of strength which can be seen through his stance and his mighty fists. Take notice of the detailed sculpt of his well trained and sturdy muscles that are a fitting representation of the ‘Symbol of Peace.’ Display alongside previously released Izuku Midoriya and the rest of the characters to recreate the world of My Hero Academia!',
-    reviews: [
-      {
-        userName: 'TotallyNotMidoriya',
-        rating: 5,
-        comment:
-          '1000000000000000000/5!!! It deserves a higher rating!! The details are perfect! The painted red lines stood out well against the blue. A true to life figurine of All Might!',
-      },
-      {
-        userName: 'HandsAndFaces',
-        rating: 1,
-        comment:
-          'Wanted to see what the hype was about. Not worth it. If I could rate it a negative, I would. What an eyesore.',
-      },
-      {
-        userName: 'arcadecola',
-        rating: 4,
-        comment: 'PLUS ULTRAAAAAAAAAAA',
-      },
-    ],
-  },
-  {
-    id: 9,
-    photo: 'assets/hawks.jpg',
-    name: 'Kotobukiya ARTFX J Hawks',
-    price: 9000,
-    description:
-      'From the hit anime series My Hero Academia, the Wing Hero “Hawks” is joining Kotobukiya’s scale figure lineup! Hawks is portrayed in the moment as he is facing off against a villain. The statue’s action-packed posing shows the hero ready to use his wings as swords. Be sure to also take notice of the detailed and dynamic sculpting of his two wings. Add this stunningly detailed piece to your collection today!',
-    reviews: [
-      {
-        userName: 'campingcup',
-        rating: 4,
-        comment: 'Very detailed. His wings are so cool!',
-      },
-      {
-        userName: 'chickenNether',
-        rating: 5,
-        comment: 'Item was shipped immediately. Will order again!',
-      },
-      {
-        userName: 'sandystorm',
-        rating: 3,
-        comment: 'Figurine has a scratch in the base, but overall looks good.',
-      },
-    ],
-  },
-  {
-    id: 10,
-    photo: 'assets/hulkbuster.jpg',
-    name: 'Hulkbuster Deluxe Version',
+    id: 4,
+    photo: 'assets/mikasa.png',
+    name: 'Ackerman Mikasa',
     price: 61398.5,
     description:
       'An authentic and detailed likeness of Hulkbuster in Avengers: Age of Ultron. Approximately 55 cm in height (approximately 21 inches) and 10 kg in weight. Special features on armor: Chest can be opened to reveal the Mark XLIII bust with LED light-up eyes and arc reactor on chest (white light, battery operated). Metallic red, gold and silver colored painting on armor with weathering effect',
@@ -265,37 +174,11 @@ export const PRODUCTS: Product[] = [
       },
     ],
   },
+
   {
-    id: 11,
-    photo: 'assets/captain-america.jpg',
-    name: 'Captain America: Avengers Endgame Mini Co',
-    price: 2073.2,
-    description:
-      'These hand-painted collectible figures were created by Iron Studios and are the perfect size for any   desk or shelf no matter the size of your collection. A must-have for fans of Marvel collectibles!',
-    reviews: [
-      {
-        userName: 'Bae Yeah Direct kit_Oh',
-        rating: 4,
-        comment:
-          "This is my first Mini Co collectible and I have to say I am SOLD on these guys! I can't wait to get more of them. I have a rather large Capt. America/Winter Soldier collection and this one is a fine addition! I love these Mini Cos! I'm so glad I checked them out A+A+A+",
-      },
-      {
-        userName: 'Than iLL Leave Can Ammo',
-        rating: 5,
-        comment: 'Great quality, look, and price. Prefect for any Cap fan.',
-      },
-      {
-        userName: 'Sell Queen Lee Love anHero',
-        rating: 5,
-        comment:
-          'This figure/model goes beyond expectations. I have had this item for 2-3 weeks now and am still marvelling at it. The pieces have great attention to detail.',
-      },
-    ],
-  },
-  {
-    id: 12,
-    photo: 'assets/thor.jpg',
-    name: 'Thor',
+    id: 6,
+    photo: 'assets/levi.png',
+    name: 'Ackerman Levi',
     price: 35882.1,
     description:
       'The Thor: Breaker of Brimstone Premium Format™ Figure measures 25.5” tall, as the God of Thunder summons the strength of Mjolnir to fight his molten foe Surtur. As Thor descends into the realm of Muspelheim, plumes of lava erupt from around the fire giant-themed base',
@@ -323,6 +206,124 @@ export const PRODUCTS: Product[] = [
         rating: 3,
         comment:
           'Just got my statue today, I am honestly extremely happy. The detail, the size, the pose, its just Epic. Thank you seller! Definitely be buying more.',
+      },
+    ],
+  },
+  {
+    id: 7,
+    photo: 'assets/sakura-kinomoto.png',
+    name: 'Max Factory Cardcaptor Sakura: Sakura Kinomoto Figma Figure',
+    price: 6448.25,
+    description:
+      'A Max Factory import. From the classic manga series. Smooth yet poseable joint. Includes wand and Kerberos sidekick. Articulated figma stand.',
+    reviews: [
+      {
+        userName: 'Leximborg_11',
+        rating: 5,
+        comment:
+          'Gandizzzz! Pak na pak si Sakura! Kuhang-kuha itsura mula sa anime. Sakit sa bulsa pero worth it!',
+      },
+      {
+        userName: 'AndyLody',
+        rating: 1,
+        comment:
+          'This doll is a curse!!! Gave this as a gift to my girlfriend. But we broke up. She loved it tho. Pero nagsayang lang ako ng pera hayst',
+      },
+    ],
+  },
+  {
+    id: 9,
+    photo: 'assets/tomoyo-daidouji.png',
+    name: 'Banpresto Cardcaptor Sakura Clear Card Q posket Petit vol.1(C:TOMOYO DAIDOUJI), Multiple Colors (BP16948)',
+    price: 785,
+    description:
+      'CARDCAPTOR SAKURA CLEAR CARD figure from Banpresto! Base Stand included. Multiple Colors',
+    reviews: [
+      {
+        userName: 'sakuraChan09',
+        rating: 4,
+        comment:
+          'Tomoyo is so cute!! The action figure is too plain tho, but can’t really complain because it’s cheaper HAHA The box was a little dented good thing the product itself has no damage',
+      },
+    ],
+  },
+  {
+    id: 10,
+    photo: 'assets/shoto.png',
+    name: 'Banpresto My Hero Academia Figure Colosseum Vol.2 Dabi (Ver.A) Collectible Figure',
+    price: 1360.5,
+    description:
+      "The Figure Colosseum collection continues with My Hero Academia's villain, Dabi! He's sauntering towards the heroes in a menacing stance, the perfect threat to add to your collection. 6 inches tall, PVC, Imported.",
+    reviews: [
+      {
+        userName: 'herostar54',
+        rating: 4,
+        comment:
+          'Box came slightly dark around the edges. Was it burnt? It smelled of burnt. But the figure is intact.',
+      },
+      {
+        userName: 'FireAndIce',
+        rating: 1,
+        comment:
+          'Wrong item sent. Seller wasn’t responding when I pointed out the box was empty.',
+      },
+      {
+        userName: 'sunsethalo',
+        rating: 5,
+        comment:
+          'Amazing detail! It’s a beautiful addition to my collection. All I need is All For One.',
+      },
+    ],
+  },
+  {
+    id: 11,
+    photo: 'assets/all-might.png',
+    name: 'Kotobukiya ARTFX J All Might',
+    price: 5320,
+    description:
+      'The latest character to join Kotobukiya’s ARTFX J lineup from the hit anime series My Hero Academia is All Might! The sculpture was developed based on the concept of ‘facing up against villains.’ All Might comes to life full of strength which can be seen through his stance and his mighty fists. Take notice of the detailed sculpt of his well trained and sturdy muscles that are a fitting representation of the ‘Symbol of Peace.’ Display alongside previously released Izuku Midoriya and the rest of the characters to recreate the world of My Hero Academia!',
+    reviews: [
+      {
+        userName: 'TotallyNotMidoriya',
+        rating: 5,
+        comment:
+          '1000000000000000000/5!!! It deserves a higher rating!! The details are perfect! The painted red lines stood out well against the blue. A true to life figurine of All Might!',
+      },
+      {
+        userName: 'HandsAndFaces',
+        rating: 1,
+        comment:
+          'Wanted to see what the hype was about. Not worth it. If I could rate it a negative, I would. What an eyesore.',
+      },
+      {
+        userName: 'arcadecola',
+        rating: 4,
+        comment: 'PLUS ULTRAAAAAAAAAAA',
+      },
+    ],
+  },
+  {
+    id: 12,
+    photo: 'assets/hawks.png',
+    name: 'Kotobukiya ARTFX J Hawks',
+    price: 9000,
+    description:
+      'From the hit anime series My Hero Academia, the Wing Hero “Hawks” is joining Kotobukiya’s scale figure lineup! Hawks is portrayed in the moment as he is facing off against a villain. The statue’s action-packed posing shows the hero ready to use his wings as swords. Be sure to also take notice of the detailed and dynamic sculpting of his two wings. Add this stunningly detailed piece to your collection today!',
+    reviews: [
+      {
+        userName: 'campingcup',
+        rating: 4,
+        comment: 'Very detailed. His wings are so cool!',
+      },
+      {
+        userName: 'chickenNether',
+        rating: 5,
+        comment: 'Item was shipped immediately. Will order again!',
+      },
+      {
+        userName: 'sandystorm',
+        rating: 3,
+        comment: 'Figurine has a scratch in the base, but overall looks good.',
       },
     ],
   },

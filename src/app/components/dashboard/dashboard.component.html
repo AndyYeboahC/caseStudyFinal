@@ -1,9 +1,57 @@
 <h2>ANIMMEEEEEEEEEE</h2>
-<div class="products-menu">
-  <a *ngFor="let product of products" routerLink="/detail/{{ product.id }}">
+
+<!-- <div class="card">
+  <a
+    class="card"
+    *ngFor="let product of products"
+    routerLink="/detail/{{ product.id }}"
+  >
     {{ product.name }}
     <ul>
-      <li><img src="{{ product.photo }}" alt="" />dfsa</li>
+      <li class="imgBx"><img src="{{ product.photo }}" alt="" />dfsa</li>
     </ul>
   </a>
-</div>
+</div> -->
+<section>
+  <div class="products">
+    <!--container-->
+    <a *ngFor="let product of products" routerLink="/detail/{{ product.id }}">
+      <div class="product">
+        <!--card-->
+        <div class="product-thumb-container">
+          <img
+            *ngIf="product.photo"
+            src="{{ product.photo }}"
+            alt="thumbnail"
+            class="product-thumbnail"
+          />
+          <p *ngIf="!product.photo">No image</p>
+        </div>
+        <div class="product-description">
+          <p class="product-name">{{ product.name }}</p>
+          <div class="product-platforms">
+            <ul *ngFor="let review of product.reviews">
+              <li>{{ review.comment.length }}</li>
+              <li>{{ review.rating }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </a>
+  </div>
+</section>
+<!-- <section>
+  <div class="container">
+    <div class="card">
+      <div class="imgBx">
+        <a
+          *ngFor="let product of products"
+          routerLink="/detail/{{ product.id }}"
+        >
+          <img src="{{ product.photo }}" alt="" />
+          <h2>{{ product.name }}</h2>
+        </a>
+      </div>
+    </div>
+  </div>
+</section> -->

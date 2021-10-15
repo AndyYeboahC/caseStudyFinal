@@ -19,4 +19,9 @@ export class DashboardComponent implements OnInit {
       .getProducts()
       .subscribe((products) => (this.products = products));
   }
+  aveStar() {
+    this.productService
+      .getProducts()
+      .subscribe((products) => (this.products = products));
+  }
 }
