@@ -3,6 +3,8 @@ import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
 import { Product } from 'src/app/models/product.interface';
 import { ProductService } from 'src/app/services/product.service';
+import { StarRatingComponent } from './star-rating/star-rating.component';
+
 @Component({
   selector: 'app-product-detail-page',
   templateUrl: './product-detail-page.component.html',

@@ -1,12 +1,27 @@
 /* HeroDetailComponent's private CSS styles */
+$padding-x: 80px;
+$side-padding:250px;
+$lighter-font-color: #616161;
+
+@mixin product-container() {
+  display: flex;
+  padding: $padding-x;
+  padding-left: $side-padding;
+  padding-right: $side-padding;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 label {
   color: #435960;
   font-weight: bold;
 }
+
 input {
   font-size: 1em;
   padding: 0.5rem;
 }
+
 button {
   margin-top: 20px;
   background-color: #eee;
@@ -14,11 +29,50 @@ button {
   border-radius: 4px;
   font-size: 1rem;
 }
-button:hover {
-  background-color: #cfd8dc;
+
+.img-container {
+  width:300px;
+  height:800px;
+  overflow:hidden;
+  img{
+    width:100%;
+  }
 }
-button:disabled {
-  background-color: #eee;
-  color: #ccc;
-  cursor: auto;
+
+.productDetails-container {
+  @include product-container();
 }
+
+.reviews-container {
+  padding: 24px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.addToCart-container {
+  display: block;
+  padding-top: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.description {
+  padding-top: 30px;
+}
+
+.productName {
+  padding-top: 25px;
+  font-weight: 800;
+}
+
+.reviews {
+  color: $lighter-font-color;
+  font-weight: 300;
+}
+
+h5 {
+  font-weight: 600;
+}
+
