@@ -11,7 +11,6 @@ import { InteractionComponent } from './components/interaction/interaction.compo
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { SearchComponent } from './components/search/search.component';
 import { AddToCartPageComponent } from './components/add-to-cart-page/add-to-cart-page.component';
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { StarRatingComponent } from './components/product-detail-page/star-rating/star-rating.component';
 
 
@@ -26,7 +25,7 @@ import { StarRatingComponent } from './components/product-detail-page/star-ratin
     AddToCartPageComponent,
     StarRatingComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule, FontAwesomeModule],
+  imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })

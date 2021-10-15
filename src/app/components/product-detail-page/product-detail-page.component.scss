@@ -1,7 +1,9 @@
 /* HeroDetailComponent's private CSS styles */
 $padding-x: 80px;
-$side-padding:250px;
+$side-padding:100px;
 $lighter-font-color: #616161;
+$image-height: 800px;
+$image-width: 400px;
 
 @mixin product-container() {
   display: flex;
@@ -31,11 +33,13 @@ button {
 }
 
 .img-container {
-  width:300px;
-  height:800px;
+  width:350px;
+  height:$image-height;
   overflow:hidden;
-  img{
-    width:100%;
+  img {
+    width: 100%;
+    max-width: $image-height;
+    max-height: $image-height;
   }
 }
 
