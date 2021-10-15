@@ -1,0 +1,10 @@
+<div *ngIf="product">
+  <h2>{{ product.name | uppercase }} Details</h2>
+  <div><span>id: </span>{{ product.id }}</div>
+  <div>
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="product.name" placeholder="Hero name" />
+    <img src="{{ product.photo }}" alt="hinata" />
+  </div>
+  <button (click)="goBack()">go back</button>
+</div>

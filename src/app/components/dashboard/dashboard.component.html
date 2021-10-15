@@ -1,0 +1,9 @@
+<h2>ANIMMEEEEEEEEEE</h2>
+<div class="products-menu">
+  <a *ngFor="let product of products" routerLink="/detail/{{ product.id }}">
+    {{ product.name }}
+    <ul>
+      <li><img src="{{ product.photo }}" alt="" />dfsa</li>
+    </ul>
+  </a>
+</div>
