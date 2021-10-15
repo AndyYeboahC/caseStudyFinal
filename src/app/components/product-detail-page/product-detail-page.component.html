@@ -1,10 +1,30 @@
-<div *ngIf="product">
-  <h2>{{ product.name | uppercase }} Details</h2>
-  <div><span>id: </span>{{ product.id }}</div>
-  <div>
-    <label for="hero-name">Hero name: </label>
-    <input id="hero-name" [(ngModel)]="product.name" placeholder="Hero name" />
-    <img src="{{ product.photo }}" alt="hinata" />
+<a (click)="goBack()">Back</a>
+<div class="productDetails-container">
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6 img-container" *ngIf="product" >
+          <img src="{{ product.photo }}" alt="hinata" />
+      </div>
+      <div class="col-sm-6">
+        <div *ngIf="product">
+          <h2 class="productName" >{{ product.name | uppercase }}</h2>
+          <p>id: {{product.id}}</p>
+          <p>₱{{product.price}} </p>
+          <p>{{product.description}}</p>
+      </div>
+      <span class="row addToCart-container">
+        <button type="button" class="btn btn-outline-warning" routerLink="/addtocart">Add to Cart</button>
+  </span>
+    </div>
   </div>
-  <button (click)="goBack()">go back</button>
+  <div class="row reviews-container">
+    <h1> Reviews </h1>
+    <span *ngIf="product">
+      <span *ngFor="let reviews of product">
+        {{product.reviews}}
+      </span>
+    </span>
+  </div>
 </div>
+</div>
+
