@@ -13,11 +13,12 @@
       <button class="btn btn-outline-light" type="submit" routerLink="/search">Search</button>
     </div>
     <!--Cart-->
-    <ul class="navbar-nav mb-lg-0">
-      <li class="nav-item">
-        <a class="nav-link" routerLink="/cart">My Cart</a>
-      </li>
-    </ul>
+
+    <!-- JUST FIX THE STYLE OF THE BUTTON(cart icon) BASED SA THEME NATIN-->
+        <button class="btn btn-primary" routerLink="/cart">
+          <i class="fas fa-cart-plus"></i>
+          <div class="badge bg-danger">{{totalItem}}</div>
+        </button>
 </nav>
 
 <!--content-->

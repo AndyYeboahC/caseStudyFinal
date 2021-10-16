@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-add-to-cart-page',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddToCartPageComponent implements OnInit {
 
-  constructor() { }
+  public products : any = [];
+  public grandTotal !: number ;
+  constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
+    this.productService.getItems().subscribe(res=>{
+      this.products = res;
+      this.grandTotal = this.productService.getTotalPrice();
+    })
   }
 
+  removeItem(item: any){
+    this.productService.removeCartItem(item);
+  }
+
+  emptycart(){
+    this.productService.removeAllCart();
+  }
 }
