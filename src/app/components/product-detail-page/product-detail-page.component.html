@@ -6,12 +6,12 @@
   <div class="container-fluid">
     <div class="row">
       <!--product image-->
-        <div class="col-sm-6 img-container" *ngIf="product" >
-          <img src="{{ product.photo }}" alt="hinata" />
+        <div class="col-sm-7 img-container" *ngIf="product" >
+          <img src="{{ product.photo }}" class="img-fluid"/>
       </div>
 
       <!--product details-->
-      <div class="col-sm-6">
+      <div class="col-sm-5">
         <div *ngIf="product">
           <h2 class="productName" >{{ product.name | uppercase }}</h2>
           <p>id: {{product.id}}</p>
@@ -21,7 +21,7 @@
 
       <!--addutucaatu-->
       <span class="row addToCart-container">
-        <button type="button" class="btn btn-outline-warning" routerLink="/addtocart">Add to Cart</button>
+        <button (click)="addcart(product)" type="button" class="btn btn-outline-warning" routerLink="/cart">Add to Cart</button>
   </span>
     </div>
   </div>

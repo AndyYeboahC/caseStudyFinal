@@ -13,6 +13,8 @@ import { StarRatingComponent } from './star-rating/star-rating.component';
 export class ProductDetailPageComponent implements OnInit {
   product: Product | undefined;
 
+public productList : any;
+
   constructor(
     private route: ActivatedRoute,
     private productService: ProductService,
@@ -21,6 +23,14 @@ export class ProductDetailPageComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProduct();
+    
+    this.productService.getItems().subscribe(res =>{
+      this.productList = res;
+
+      this.productList.forEach((a:any) => {
+        Object.assign(a,{quantity:1,total:a.price});
+      })
+    })
   }
 
   getProduct(): void {
@@ -33,4 +43,9 @@ export class ProductDetailPageComponent implements OnInit {
   goBack(): void {
     this.location.back();
   }
+
+  addcart(product: any) {
+    this.productService.addtoCart(product);
+  } 
+
 }
