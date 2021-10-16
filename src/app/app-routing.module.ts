@@ -5,6 +5,7 @@ import { ProductsPageComponent } from './components/products-page/products-page.
 import { ProductDetailPageComponent } from './components/product-detail-page/product-detail-page.component';
 import { SearchComponent } from './components/search/search.component';
 
+
 const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
@@ -12,6 +13,7 @@ const routes: Routes = [
   { path: 'products', component: ProductsPageComponent },
   { path: 'heroes', component: ProductsPageComponent },
   { path: 'search', component: SearchComponent },
+  
 ];
 
 @NgModule({
