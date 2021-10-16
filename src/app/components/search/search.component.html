@@ -1,1 +1,38 @@
-<h1>matches for</h1>
+<input
+          class="search-input"
+          name="search"
+          [(ngModel)]='listFilter'
+          placeholder="Search"
+        />
+    <button class="search-btn">Search</button>
+
+<h1 *ngIf="filteredProducts.length">{{ filteredProducts.length }} matches for {{listFilter}}</h1>
+
+<section>
+    <div class="products">
+      <!--container-->
+      <a *ngFor="let product of filteredProducts" routerLink="/detail/{{ product.id }}">
+        <div class="product">
+          <!--card-->
+          <div class="product-thumb-container">
+            <img
+              *ngIf="product.photo"
+              src="{{ product.photo }}"
+              alt="thumbnail"
+              class="product-thumbnail"
+            />
+            <p *ngIf="!product.photo">No image</p>
+          </div>
+          <div class="product-description">
+            <p class="product-name">{{ product.name }}</p>
+            <div class="product-platforms">
+              <ul *ngFor="let review of product.reviews">
+                <li>{{ review.comment.length }}</li>
+                <li>{{ review.rating }}</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
