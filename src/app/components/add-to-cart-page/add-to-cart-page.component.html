@@ -21,7 +21,7 @@
                         <tr *ngFor = "let item of products; let i = index"> 
                             <td>{{i+1}}</td>
                             <td>{{item.name}}</td>
-                            <td><img src="{{item.photo}}" alt=""></td>
+                            <td class="productadded"><img  src="{{item.photo}}" alt=""></td>
                             <td>test</td>
                             <td>{{item.price}}</td> 
                             <td>{{item.quantity}}</td>
@@ -52,7 +52,7 @@
         <h5 class = "card-title">My Cart</h5>
     </div>
     <div class = "center">
-        <img alt="wheres the pic">
+        <img class="emptycartpic" src="../../../assets/emptycart.png"alt="wheres the pic">
         <h4>Your cart is empty!</h4>
         <h6>Add item to it now</h6>
         <button routerLink="/products" class="btn btn-primary">Shop Now</button>
