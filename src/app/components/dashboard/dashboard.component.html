@@ -1,5 +1,3 @@
-<h2>ANIMMEEEEEEEEEE</h2>
-
 <!-- <div class="card">
   <a
     class="card"
@@ -12,34 +10,45 @@
     </ul>
   </a>
 </div> -->
-<section>
-  <div class="products">
-    <!--container-->
-    <a *ngFor="let product of products" routerLink="/detail/{{ product.id }}">
-      <div class="product">
-        <!--card-->
-        <div class="product-thumb-container">
-          <img
-            *ngIf="product.photo"
-            src="{{ product.photo }}"
-            alt="thumbnail"
-            class="product-thumbnail"
-          />
-          <p *ngIf="!product.photo">No image</p>
-        </div>
-        <div class="product-description">
-          <p class="product-name">{{ product.name }}</p>
-          <div class="product-platforms">
-            <ul *ngFor="let review of product.reviews">
-              <li>{{ review.comment.length }}</li>
-              <li>{{ review.rating }}</li>
-            </ul>
+<div class="main">
+  <div class="main-head">
+    <h1 class="main-head-text">ANIME STUDIOS</h1>
+  </div>
+  <div class="main-dashboard">
+    <div class="products">
+      <!--container-->
+
+      <a *ngFor="let product of products" routerLink="/detail/{{ product.id }}">
+        <div class="product">
+          <!--card-->
+          <div class="product-thumb-container">
+            <img
+              *ngIf="product.photo"
+              src="{{ product.photo }}"
+              alt="thumbnail"
+              class="product-thumbnail"
+            />
+            <p *ngIf="!product.photo">No image</p>
+          </div>
+
+          <div class="product-description">
+            <p class="product-name">{{ product.name }}</p>
+            <!-- reviews iteration -->
+            <div
+              class="product-platforms"
+              *ngFor="let review of product.reviews; let i = index"
+            >
+              <li>
+                {{ review.rating }}
+              </li>
+            </div>
+            <!-- reviews iteration -->
           </div>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
   </div>
-</section>
+</div>
 <!-- <section>
   <div class="container">
     <div class="card">
