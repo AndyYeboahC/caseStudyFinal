@@ -8,6 +8,7 @@ export const PRODUCTS: Product[] = [
     price: 2999,
     description:
       'A renewed edition of the previously released Uzumaki Naruto! Featuring repainted colors to enhance the appearance, this is the definitive edition of the figure. The accessories are also newly sculpted, including the happy coat and the arm parts. The facial printing has been improved as well! The set includes optional upper left and right arms, optional left and right arms, 3 pairs of optional hands, 3 optional faces, 2 kunai, shuriken, Rasengan, right hand for Rasengan, stand, folded arm parts, scroll, and a waist pouch. The product box will have a Bluefin warning label, which is proof that you are purchasing an officially licensed band a I product, distributed by its sole and authorized distributor.',
+    averageRating: 0,
     reviews: [
       {
         userName: 'CamsAmnida',
@@ -35,6 +36,7 @@ export const PRODUCTS: Product[] = [
     price: 2073.2,
     description:
       'These hand-painted collectible figures were created by Iron Studios and are the perfect size for any   desk or shelf no matter the size of your collection. A must-have for fans of Marvel collectibles!',
+    averageRating: 0,
     reviews: [
       {
         userName: 'Bae Yeah Direct kit_Oh',
@@ -62,6 +64,7 @@ export const PRODUCTS: Product[] = [
     price: 5299,
     description:
       'Due to manual measurement, please allow 1~2 cm error, which will not affect the use.  Toy statues are handmade colors. Due to differences in light, environment and display, products and pictures may have a certain color difference, but will not affect the use, please refer to the actual product.',
+    averageRating: 0,
     reviews: [
       {
         userName: 'Karl_drugstore',
@@ -88,6 +91,7 @@ export const PRODUCTS: Product[] = [
     price: 8799,
     description:
       'Please note: Due to manual measurement, please allow 1~2 cm error, which will not affect the use.  Toy statues are handmade colors. Due to differences in light, environment and display, products and pictures may have a certain color difference, but will not affect the use, please refer to the actual product.',
+    averageRating: 0,
     reviews: [
       {
         userName: 'CamsAmnida',
@@ -120,6 +124,7 @@ export const PRODUCTS: Product[] = [
     price: 9395,
     description:
       'Li crouches, holding his sword aloft and ready for battle, on a specially designed base. A high level of detail and great attention to colors is created to bring the character to life. Sculpted by Yoshinori Ito, Li Syaoran is just over 9 inches tall (1/7 scale) as he prepares to leap off of an angled display base featuring intricate symbols and designs on a large gold tile.  Li will be an awesome centerpiece in your collection, and he’s the perfect partner for the previously released Sakura Kinomoto!',
+    averageRating: 0,
     reviews: [
       {
         userName: 'willOfFortune',
@@ -153,6 +158,7 @@ export const PRODUCTS: Product[] = [
     price: 61398.5,
     description:
       'An authentic and detailed likeness of Hulkbuster in Avengers: Age of Ultron. Approximately 55 cm in height (approximately 21 inches) and 10 kg in weight. Special features on armor: Chest can be opened to reveal the Mark XLIII bust with LED light-up eyes and arc reactor on chest (white light, battery operated). Metallic red, gold and silver colored painting on armor with weathering effect',
+    averageRating: 0,
     reviews: [
       {
         userName: 'CanEat_Are_Agha',
@@ -182,6 +188,7 @@ export const PRODUCTS: Product[] = [
     price: 35882.1,
     description:
       'The Thor: Breaker of Brimstone Premium Format™ Figure measures 25.5” tall, as the God of Thunder summons the strength of Mjolnir to fight his molten foe Surtur. As Thor descends into the realm of Muspelheim, plumes of lava erupt from around the fire giant-themed base',
+    averageRating: 0,
     reviews: [
       {
         userName: 'Eyes Ant tone Knee Tan Oil',
@@ -216,6 +223,7 @@ export const PRODUCTS: Product[] = [
     price: 6448.25,
     description:
       'A Max Factory import. From the classic manga series. Smooth yet poseable joint. Includes wand and Kerberos sidekick. Articulated figma stand.',
+    averageRating: 0,
     reviews: [
       {
         userName: 'Leximborg_11',
@@ -238,6 +246,7 @@ export const PRODUCTS: Product[] = [
     price: 785,
     description:
       'CARDCAPTOR SAKURA CLEAR CARD figure from Banpresto! Base Stand included. Multiple Colors',
+    averageRating: 0,
     reviews: [
       {
         userName: 'sakuraChan09',
@@ -254,6 +263,7 @@ export const PRODUCTS: Product[] = [
     price: 1360.5,
     description:
       "The Figure Colosseum collection continues with My Hero Academia's villain, Dabi! He's sauntering towards the heroes in a menacing stance, the perfect threat to add to your collection. 6 inches tall, PVC, Imported.",
+    averageRating: 0,
     reviews: [
       {
         userName: 'herostar54',
@@ -282,6 +292,7 @@ export const PRODUCTS: Product[] = [
     price: 5320,
     description:
       'The latest character to join Kotobukiya’s ARTFX J lineup from the hit anime series My Hero Academia is All Might! The sculpture was developed based on the concept of ‘facing up against villains.’ All Might comes to life full of strength which can be seen through his stance and his mighty fists. Take notice of the detailed sculpt of his well trained and sturdy muscles that are a fitting representation of the ‘Symbol of Peace.’ Display alongside previously released Izuku Midoriya and the rest of the characters to recreate the world of My Hero Academia!',
+    averageRating: 0,
     reviews: [
       {
         userName: 'TotallyNotMidoriya',
@@ -309,6 +320,7 @@ export const PRODUCTS: Product[] = [
     price: 9000,
     description:
       'From the hit anime series My Hero Academia, the Wing Hero “Hawks” is joining Kotobukiya’s scale figure lineup! Hawks is portrayed in the moment as he is facing off against a villain. The statue’s action-packed posing shows the hero ready to use his wings as swords. Be sure to also take notice of the detailed and dynamic sculpting of his two wings. Add this stunningly detailed piece to your collection today!',
+    averageRating: 0,
     reviews: [
       {
         userName: 'campingcup',
