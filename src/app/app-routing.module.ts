@@ -9,8 +9,9 @@ const routes: Routes = [
   { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'detail/:id', component: ProductDetailPageComponent },
-  { path: 'search', component: SearchComponent },
-  { path: 'cart', component: AddToCartPageComponent },
+  { path: 'search/:_searchInput', component: SearchComponent },
+  { path: 'cart', component: AddToCartPageComponent}
+  
 ];
 
 @NgModule({

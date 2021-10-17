@@ -1,13 +1,13 @@
-<input
+<!-- <input
           class="search-input"
           name="search"
-          [(ngModel)]='listFilter'
-          placeholder="Search"
+          [(ngModel)]='searchInput'
+          placeholder="Search" 
         />
-    <button class="search-btn">Search</button>
+    <button class="search-btn" (click)="doSearch(searchInput)">Search</button> -->
 
-<h1 *ngIf="filteredProducts.length">{{ filteredProducts.length }} matches for {{listFilter}}</h1>
-
+<h1 *ngIf="filteredProducts.length">{{ filteredProducts.length }} matches for {{searchInput}}</h1>
+<h1 *ngIf="filteredProducts.length==0"> No matches found </h1>
 <section>
     <div class="products">
       <!--container-->
