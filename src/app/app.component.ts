@@ -6,17 +6,15 @@ import { ProductService } from './services/product.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit{
-  
-// Code for addtocart functionality
+export class AppComponent implements OnInit {
+  // Code for addtocart functionality
   public totalItem: number = 0;
-  constructor(private productService: ProductService){}
+  constructor(private productService: ProductService) {}
 
-  ngOnInit():void {
-    this.productService.getItems()
-    .subscribe(res => {
+  ngOnInit(): void {
+    this.productService.getItems().subscribe((res) => {
       this.totalItem = res.length;
       console.log(res);
-    })
+    });
   }
 }

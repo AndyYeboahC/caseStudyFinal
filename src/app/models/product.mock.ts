@@ -2,8 +2,8 @@ import { Product } from './product.interface';
 
 export const PRODUCTS: Product[] = [
   {
-    id: 1,
-    photo: 'assets/uzumaki-naruto.png',
+    id: 12021001,
+    photo: 'assets/images/uzumaki-naruto.png',
     name: 'Uzumaki Naruto Vol. 4',
     price: 2999,
     description:
@@ -29,8 +29,8 @@ export const PRODUCTS: Product[] = [
     ],
   },
   {
-    id: 5,
-    photo: 'assets/titan.png',
+    id: 22021002,
+    photo: 'assets/images/titan.png',
     name: 'Colossal Titan',
     price: 2073.2,
     description:
@@ -56,8 +56,8 @@ export const PRODUCTS: Product[] = [
     ],
   },
   {
-    id: 2,
-    photo: 'assets/hyuga-hinata.png',
+    id: 32021003,
+    photo: 'assets/images/hyuga-hinata.png',
     name: 'Hyuga Hinata',
     price: 5299,
     description:
@@ -82,8 +82,8 @@ export const PRODUCTS: Product[] = [
     ],
   },
   {
-    id: 3,
-    photo: 'assets/gaara.png',
+    id: 42021004,
+    photo: 'assets/images/gaara.png',
     name: 'Yuzawa Gaara',
     price: 8799,
     description:
@@ -114,8 +114,8 @@ export const PRODUCTS: Product[] = [
     ],
   },
   {
-    id: 8,
-    photo: 'assets/li-syaoran.png',
+    id: 52021005,
+    photo: 'assets/images/li-syaoran.png',
     name: 'Kotobukiya Li Syaoran Cardcaptor Sakura ARTFX J Statue',
     price: 9395,
     description:
@@ -147,8 +147,8 @@ export const PRODUCTS: Product[] = [
     ],
   },
   {
-    id: 4,
-    photo: 'assets/mikasa.png',
+    id: 62021006,
+    photo: 'assets/images/mikasa.png',
     name: 'Ackerman Mikasa',
     price: 61398.5,
     description:
@@ -176,8 +176,8 @@ export const PRODUCTS: Product[] = [
   },
 
   {
-    id: 6,
-    photo: 'assets/levi.png',
+    id: 72021007,
+    photo: 'assets/images/levi.png',
     name: 'Ackerman Levi',
     price: 35882.1,
     description:
@@ -210,8 +210,8 @@ export const PRODUCTS: Product[] = [
     ],
   },
   {
-    id: 7,
-    photo: 'assets/sakura-kinomoto.png',
+    id: 82021008,
+    photo: 'assets/images/sakura-kinomoto.png',
     name: 'Max Factory Cardcaptor Sakura: Sakura Kinomoto Figma Figure',
     price: 6448.25,
     description:
@@ -232,8 +232,8 @@ export const PRODUCTS: Product[] = [
     ],
   },
   {
-    id: 9,
-    photo: 'assets/tomoyo-daidouji.png',
+    id: 92021009,
+    photo: 'assets/images/tomoyo-daidouji.png',
     name: 'Banpresto Cardcaptor Sakura Clear Card Q posket Petit vol.1(C:TOMOYO DAIDOUJI), Multiple Colors (BP16948)',
     price: 785,
     description:
@@ -248,8 +248,8 @@ export const PRODUCTS: Product[] = [
     ],
   },
   {
-    id: 10,
-    photo: 'assets/shoto.png',
+    id: 1020210010,
+    photo: 'assets/images/shoto.png',
     name: 'Banpresto My Hero Academia Figure Colosseum Vol.2 Dabi (Ver.A) Collectible Figure',
     price: 1360.5,
     description:
@@ -276,8 +276,8 @@ export const PRODUCTS: Product[] = [
     ],
   },
   {
-    id: 11,
-    photo: 'assets/all-might.png',
+    id: 1120210011,
+    photo: 'assets/images/all-might.png',
     name: 'Kotobukiya ARTFX J All Might',
     price: 5320,
     description:
@@ -303,8 +303,8 @@ export const PRODUCTS: Product[] = [
     ],
   },
   {
-    id: 12,
-    photo: 'assets/hawks.png',
+    id: 1220210012,
+    photo: 'assets/images/hawks.png',
     name: 'Kotobukiya ARTFX J Hawks',
     price: 9000,
     description:
