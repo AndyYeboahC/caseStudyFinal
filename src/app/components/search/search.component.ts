@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { Product } from 'src/app/models/product.interface';
 import { ProductService } from 'src/app/services/product.service';
 
@@ -7,39 +8,47 @@ import { ProductService } from 'src/app/services/product.service';
   templateUrl: './search.component.html',
   styleUrls: ['./search.component.scss']
 })
-export class SearchComponent implements OnInit {
+export class SearchComponent implements  OnInit {
 
-  private _listFilter = '';
-  get listFilter(): string {
-    return this._listFilter;
+  private _searchInput = '';
+  get searchInput(): string {
+    return this._searchInput;
   }
-  set listFilter(value: string) {
-    this._listFilter = value;
-    this.filteredProducts = this.performFilter(value);
+  set searchInput(value: string) {
+    this._searchInput = value;
+   // this.filteredProducts = this.performSearch(value);
   }
 
   filteredProducts: Product[] = [];
   products: Product[] = [];
 
-  constructor(private productService: ProductService) {}
+  constructor(private productService: ProductService, private router:Router) {
+    console.log('message');
+    this.router.routeReuseStrategy.shouldReuseRoute = () => false;
+  }
 
-  performFilter(filterBy: string): Product[] {
-    filterBy = filterBy.toLocaleLowerCase();
+  performSearch(searchBy: string): Product[] {
+    searchBy = searchBy.toLocaleLowerCase();
     return this.products.filter((product: Product) =>
-      product.name.toLocaleLowerCase().includes(filterBy));
+      product.name.toLocaleLowerCase().includes(searchBy) || product.description.toLocaleLowerCase().includes(searchBy) );
   }
 
+  
   ngOnInit(): void {
-    this.getProducts();
+    this.getFilteredProducts();
+    this._searchInput = this.productService.getSearchTerm();
+    this.filteredProducts = this.performSearch(this._searchInput);
+    console.log('test' + this._searchInput);
   }
+
+ 
   
-  
-  getProducts(): void {
+  getFilteredProducts(): void {
     this.productService
       .getProducts()
       .subscribe((products) => (this.products = products));
   }
   
-  
+ 
 
 }

@@ -62,4 +62,16 @@ export class ProductService {
     this.cartItemList = [];
     this.productList.next(this.cartItemList);
   }
+
+  // Search
+  searchTerm = '';
+
+  updateSearchTerm(input: string) {
+    this.searchTerm = input;
+    return this.searchTerm;
+  }
+
+  getSearchTerm(){
+    return this.searchTerm;
+  }
 }
