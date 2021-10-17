@@ -40,7 +40,7 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.getProducts();
-    // this.getStarSum();
+    this.getStarSum();
   }
   getProducts(): void {
     this.productService
@@ -49,11 +49,18 @@ export class DashboardComponent implements OnInit {
   }
 
   //SUM PALANG KINIKUHA NUNG MGA FUNCTIONS BELOW
-  // getStarSum() {
-  //   this.sum = this.arrays.reduce((acc: any, val: any) => {
-  //     return acc + val.rating;
-  //   }, 0);
-  // }
+  getStarSum() {
+    // this.sum = this.arrays.reduce((acc: any, val: any) => {
+    //   return acc + val.rating;
+    // }, 0);
+    for (let product of this.products) {
+      let averageRating = 0;
+      for (let review of product.reviews) {
+        averageRating = averageRating + review.rating;
+      }
+      product.averageRating = averageRating / product.reviews.length;
+    }
+  }
 
   // getStarSum(num: number) {
   //   this.sum += num;

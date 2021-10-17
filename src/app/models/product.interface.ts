@@ -4,6 +4,7 @@ export interface Product {
   photo: string;
   price: number;
   description: string;
+  averageRating: number;
   reviews: IReviews[];
 }
 

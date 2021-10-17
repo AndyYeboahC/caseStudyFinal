@@ -33,13 +33,14 @@
 
           <div class="product-description">
             <p class="product-name">{{ product.name }}</p>
+            <h1>{{ product.averageRating }}</h1>
             <!-- reviews iteration -->
             <div
               class="product-platforms"
               *ngFor="let review of product.reviews; let i = index"
             >
               <li>
-                {{ review.rating }}
+                <!-- {{ sum }} -->
               </li>
             </div>
             <!-- reviews iteration -->
