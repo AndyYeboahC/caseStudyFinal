@@ -1,9 +1,9 @@
 <!--navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Shop Name</a>
+<nav class="navbar navbar-expand-lg navbar-custom justify-content-between">
+  <a class="navbar-brand mt-lg-0" href="">Shop Name</a>
 
     <!--search bar-->
-    
+
       <div class="input-group w-50">
         <input
           class="form-control me-2"
@@ -14,12 +14,12 @@
         />
         <button class="btn btn-outline-light" type="submit" (click)="getInput(searchInput)" [disabled]="searchInput==''">Search</button>
       </div>
-    
-    
+
+
     <!--Cart-->
 
   <!-- JUST FIX THE STYLE OF THE BUTTON(cart icon) BASED SA THEME NATIN-->
-  <button class="btn btn-primary" routerLink="/cart">
+  <button class="btn btn-primary my-lg-0" routerLink="/cart">
     <i class="fas fa-cart-plus"></i>
     <div class="badge bg-danger">{{ totalItem }}</div>
   </button>

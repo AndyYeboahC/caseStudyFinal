@@ -1,18 +1,31 @@
 /* You can add global styles to this file, and also import other style files */
+$font-family: Arial, Helvetica, sans-serif;
+$base-color: #000814;
+$primary-color: #ffc300;
+$secondary-color: #ffd60a;
+$accent-color: #003566;
+$text-color: #ffd60a;
+
 h1 {
-  color: #369;
-  font-family: Arial, Helvetica, sans-serif;
+  color: $secondary-color;
+  font-family: $font-family;
   font-size: 250%;
 }
 h2,
 h3 {
-  color: #444;
-  font-family: Arial, Helvetica, sans-serif;
+  color: $primary-color;
+  font-family: $font-family;
   font-weight: lighter;
 }
+
 body {
+  display: flex;
+  flex-direction: column;
   margin: 2em;
+  color: $base-color;
+  background-color: $base-color;
 }
+
 body,
 input[type="text"],
 button {
@@ -21,7 +34,7 @@ button {
 }
 /* everywhere else */
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $font-family;
 }
 
 .main{
@@ -34,18 +47,6 @@ min-height:100%;
 }
 
 /* footer */
-#footer {
-background-color: #212529;
-font-family: 'Lucida Sans';
-position: static;
-color: white;
-height: 60px;
-margin-top: 60px;
-bottom: 0;
-width: 100%;
-text-align: center;
-padding: 15px;
-}
 
 /* Importing Bootstrap SCSS file. */
 @import "~bootstrap/scss/bootstrap";
