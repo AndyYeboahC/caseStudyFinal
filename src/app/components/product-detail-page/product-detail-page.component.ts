@@ -4,6 +4,7 @@ import { Location } from '@angular/common';
 import { Product } from 'src/app/models/product.interface';
 import { ProductService } from 'src/app/services/product.service';
 import { StarRatingComponent } from './star-rating/star-rating.component';
+import { PRODUCTS } from 'src/app/models/product.mock';
 
 @Component({
   selector: 'app-product-detail-page',
@@ -14,6 +15,7 @@ export class ProductDetailPageComponent implements OnInit {
   product: Product | undefined;
 
   public productList: any;
+  
 
   constructor(
     private route: ActivatedRoute,
@@ -27,9 +29,11 @@ export class ProductDetailPageComponent implements OnInit {
     this.productService.getItems().subscribe((res) => {
       this.productList = res;
 
-      this.productList.forEach((a: any) => {
+      this.productList.forEach((a: any,) => {
         Object.assign(a, { quantity: 1, total: a.price });
       });
+
+
     });
   }
 
@@ -45,6 +49,14 @@ export class ProductDetailPageComponent implements OnInit {
   }
 
   addcart(product: any) {
-    this.productService.addtoCart(product);
+  //CHECK IF EXISTING SI ITEM NA UNG ITEM USING cartItem.id  
+    if(this.productList.some((cartItem:any,) => cartItem.id === product.id)){
+      alert("this is already in your cart")
+  // first attempt, quantity will be = to 1 because of line 32 to 33... what we need is grab that quantity then increment by 1    
+    } else {
+  // KUNG WALA, ILALAGAY NYA UNG ITEM NA UN SA ARRAY.. CALLING addtoCart    
+      let cartItem = this.productService.addtoCart(product);
+      
+    }
   }
 }
