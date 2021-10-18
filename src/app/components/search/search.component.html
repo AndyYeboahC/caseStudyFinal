@@ -1,7 +1,7 @@
 
-<h1 *ngIf="filteredProducts.length==1">{{ filteredProducts.length }} match for {{searchInput}}</h1>
-<h1 *ngIf="filteredProducts.length>1">{{ filteredProducts.length }} matches for {{searchInput}}</h1>
-<h1 *ngIf="filteredProducts.length==0"> No matches found for {{searchInput}} </h1>
+<h1 *ngIf="filteredProducts.length==1">{{ filteredProducts.length }} match for {{_searchInput}}</h1>
+<h1 *ngIf="filteredProducts.length>1">{{ filteredProducts.length }} matches for {{_searchInput}}</h1>
+<h1 *ngIf="filteredProducts.length==0"> No matches found for {{_searchInput}} </h1>
 <div class="products">
   <!--container-->
 

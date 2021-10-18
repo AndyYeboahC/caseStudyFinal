@@ -10,20 +10,13 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class SearchComponent implements  OnInit {
 
-  private _searchInput = '';
-  get searchInput(): string {
-    return this._searchInput;
-  }
-  set searchInput(value: string) {
-    this._searchInput = value;
-   // this.filteredProducts = this.performSearch(value);
-  }
+  public _searchInput = '';
+  
 
   filteredProducts: Product[] = [];
   products: Product[] = [];
 
   constructor(private productService: ProductService, private router:Router) {
-    console.log('message');
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
   }
 
@@ -37,7 +30,6 @@ export class SearchComponent implements  OnInit {
     this.getFilteredProducts();
     this._searchInput = this.productService.getSearchTerm();
     this.filteredProducts = this.performSearch(this._searchInput);
-    console.log('test' + this._searchInput);
   }
   
   getFilteredProducts(): void {

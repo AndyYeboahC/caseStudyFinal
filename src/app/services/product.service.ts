@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, of } from 'rxjs';
 
-import { IReviews, Product } from '../models/product.interface';
+import { Product } from '../models/product.interface';
 import { PRODUCTS } from 'src/app/models/product.mock';
 import { InteractionService } from './interaction.service';
 @Injectable({
@@ -71,7 +71,7 @@ export class ProductService {
     this.searchTerm = input;
     return this.searchTerm;
   }
-  
+
   getSearchTerm(){
     return this.searchTerm;
   }
