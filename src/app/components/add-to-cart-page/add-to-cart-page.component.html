@@ -21,16 +21,19 @@
               <td>{{ i + 1 }}</td>
               <td>{{ item.name }}</td>
               <td>
-                <img class="productadded" src="{{ item.photo }}" alt="" />
+                <img
+                  class="productadded"
+                  src="{{ item.photo }}"
+                  alt="where is it"
+                />
               </td>
-              <td>{{ item.price | currency: "PHP":"₱" }}</td>
+              <td>{{ item.price }}</td>
               <td>{{ item.quantity }}</td>
-              <td>{{ item.total | currency: "PHP":"₱" }}</td>
+              <td>{{ item.total }}</td>
               <td>
                 <button (click)="removeItem(item)" class="btn btn-danger">
                   <i class="fas fa-trash-alt"></i>
                 </button>
-                <!-- click=removeItem(item)  -->
               </td>
             </tr>
             <tr>

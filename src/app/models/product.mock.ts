@@ -125,7 +125,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 52021005,
     photo: 'assets/images/li-syaoran.png',
-    name: 'Li Syaoran',
+    name: 'Li Syaorans',
     price: 9395,
     description:
       'Li crouches, holding his sword aloft and ready for battle, on a specially designed base. A high level of detail and great attention to colors is created to bring the character to life. Sculpted by Yoshinori Ito, Li Syaoran is just over 9 inches tall (1/7 scale) as he prepares to leap off of an angled display base featuring intricate symbols and designs on a large gold tile.  Li will be an awesome centerpiece in your collection, and he’s the perfect partner for the previously released Sakura Kinomoto!',
