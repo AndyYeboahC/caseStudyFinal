@@ -30,7 +30,7 @@ export class ProductDetailPageComponent implements OnInit {
       this.productList = res;
 
       this.productList.forEach((a: any,) => {
-        Object.assign(a, { quantity: 1, total: a.price });
+        Object.assign(a, {total: a.price });
       });
 
 
