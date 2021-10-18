@@ -29,8 +29,9 @@ export class ProductDetailPageComponent implements OnInit {
     this.productService.getItems().subscribe((res) => {
       this.productList = res;
 
-      this.productList.forEach((a: any,) => {
-        Object.assign(a, {total: a.price * a.quantity });
+      this.productList.forEach((a: any) => {
+        Object.assign(a, {total: a.price});
+        
       });
 
 
