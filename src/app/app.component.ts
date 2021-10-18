@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl, NgForm } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { getTsBuildInfoEmitOutputFilePath } from 'typescript';
 import { ProductService } from './services/product.service';
 
 @Component({
@@ -14,9 +12,7 @@ export class AppComponent implements OnInit {
   public totalItem: number = 0;
   constructor(private productService: ProductService, private router: Router, private route: ActivatedRoute){}
 
-// search bar
-  _searchInput: string = '';
-  searchTerm: string = '';
+
   //// cart
   ngOnInit():void {
     this.productService.getItems()
@@ -26,17 +22,20 @@ export class AppComponent implements OnInit {
     });
   }
 
+  // search bar
+  _searchInput: string = '';
+  searchTerm: string = '';
+
   get searchInput(): string {
     return this._searchInput;
   }
   set searchInput(value: string) {
     this._searchInput = value;
   }
-  
+
   getInput(searchInput: string) {
     this.productService.updateSearchTerm(this._searchInput);
     this.router.navigateByUrl('/search/'+this._searchInput);
-    console.log('trial' + searchInput);
   }
 
 

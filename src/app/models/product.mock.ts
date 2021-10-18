@@ -4,7 +4,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 12021001,
     photo: 'assets/images/uzumaki-naruto.png',
-    name: 'Uzumaki Naruto Vol. 4',
+    name: 'Uzumaki Naruto',
     price: 2999,
     description:
       'A renewed edition of the previously released Uzumaki Naruto! Featuring repainted colors to enhance the appearance, this is the definitive edition of the figure. The accessories are also newly sculpted, including the happy coat and the arm parts. The facial printing has been improved as well! The set includes optional upper left and right arms, optional left and right arms, 3 pairs of optional hands, 3 optional faces, 2 kunai, shuriken, Rasengan, right hand for Rasengan, stand, folded arm parts, scroll, and a waist pouch. The product box will have a Bluefin warning label, which is proof that you are purchasing an officially licensed band a I product, distributed by its sole and authorized distributor.',
@@ -61,29 +61,37 @@ export const PRODUCTS: Product[] = [
   },
   {
     id: 32021003,
-    photo: 'assets/images/hyuga-hinata.png',
-    name: 'Hyuga Hinata',
-    price: 5299,
+    photo: 'assets/images/levi.png',
+    name: 'Ackerman Levi',
+    price: 35882.1,
     description:
-      'Due to manual measurement, please allow 1~2 cm error, which will not affect the use.  Toy statues are handmade colors. Due to differences in light, environment and display, products and pictures may have a certain color difference, but will not affect the use, please refer to the actual product.',
+      'The Thor: Breaker of Brimstone Premium Format™ Figure measures 25.5” tall, as the God of Thunder summons the strength of Mjolnir to fight his molten foe Surtur. As Thor descends into the realm of Muspelheim, plumes of lava erupt from around the fire giant-themed base',
     averageRating: 0,
     quantity: 1,
     reviews: [
       {
-        userName: 'Karl_drugstore',
+        userName: 'Eyes Ant tone Knee Tan Oil',
+        rating: 4,
+        comment:
+          'Love it, only criticism is the purple skin tone makes his arms look a bit zombie ish',
+      },
+      {
+        userName: 'Prank Lane Man out',
         rating: 5,
         comment:
-          'I want Hinata to be my wife. This product will make my dream come true!',
+          "I saw a YouTube review on this and thought my husband would love it. I was right he did!! Picture's don't do it justice. Love the fine details, colors, and pose. So glad he has this to add to the collection!",
       },
       {
-        userName: 'AnnSamnida',
+        userName: 'Jan Been A Dick Bass In New',
         rating: 5,
-        comment: 'The product was way better than expected! Thank you, seller!',
+        comment:
+          'Truly a masterpiece that will be a permanent fixture in my collection',
       },
       {
-        userName: 'Albayde705',
-        rating: 2,
-        comment: 'Second purchase. I hate it.',
+        userName: 'Low Rinse Mic eeL Re Fire Oh!',
+        rating: 3,
+        comment:
+          'Just got my statue today, I am honestly extremely happy. The detail, the size, the pose, its just Epic. Thank you seller! Definitely be buying more.',
       },
     ],
   },
@@ -124,7 +132,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 52021005,
     photo: 'assets/images/li-syaoran.png',
-    name: 'Kotobukiya Li Syaoran Cardcaptor Sakura ARTFX J Statue',
+    name: 'Li Syaorans',
     price: 9395,
     description:
       'Li crouches, holding his sword aloft and ready for battle, on a specially designed base. A high level of detail and great attention to colors is created to bring the character to life. Sculpted by Yoshinori Ito, Li Syaoran is just over 9 inches tall (1/7 scale) as he prepares to leap off of an angled display base featuring intricate symbols and designs on a large gold tile.  Li will be an awesome centerpiece in your collection, and he’s the perfect partner for the previously released Sakura Kinomoto!',
@@ -186,47 +194,10 @@ export const PRODUCTS: Product[] = [
       },
     ],
   },
-
-  {
-    id: 72021007,
-    photo: 'assets/images/levi.png',
-    name: 'Ackerman Levi',
-    price: 35882.1,
-    description:
-      'The Thor: Breaker of Brimstone Premium Format™ Figure measures 25.5” tall, as the God of Thunder summons the strength of Mjolnir to fight his molten foe Surtur. As Thor descends into the realm of Muspelheim, plumes of lava erupt from around the fire giant-themed base',
-    averageRating: 0,
-    quantity: 1,
-    reviews: [
-      {
-        userName: 'Eyes Ant tone Knee Tan Oil',
-        rating: 4,
-        comment:
-          'Love it, only criticism is the purple skin tone makes his arms look a bit zombie ish',
-      },
-      {
-        userName: 'Prank Lane Man out',
-        rating: 5,
-        comment:
-          "I saw a YouTube review on this and thought my husband would love it. I was right he did!! Picture's don't do it justice. Love the fine details, colors, and pose. So glad he has this to add to the collection!",
-      },
-      {
-        userName: 'Jan Been A Dick Bass In New',
-        rating: 5,
-        comment:
-          'Truly a masterpiece that will be a permanent fixture in my collection',
-      },
-      {
-        userName: 'Low Rinse Mic eeL Re Fire Oh!',
-        rating: 3,
-        comment:
-          'Just got my statue today, I am honestly extremely happy. The detail, the size, the pose, its just Epic. Thank you seller! Definitely be buying more.',
-      },
-    ],
-  },
   {
     id: 82021008,
     photo: 'assets/images/sakura-kinomoto.png',
-    name: 'Max Factory Cardcaptor Sakura: Sakura Kinomoto Figma Figure',
+    name: 'Sakura Kinomoto',
     price: 6448.25,
     description:
       'A Max Factory import. From the classic manga series. Smooth yet poseable joint. Includes wand and Kerberos sidekick. Articulated figma stand.',
@@ -248,9 +219,37 @@ export const PRODUCTS: Product[] = [
     ],
   },
   {
+    id: 72021007,
+    photo: 'assets/images/hyuga-hinata.png',
+    name: 'Hyuga Hinata',
+    price: 5299,
+    description:
+      'Due to manual measurement, please allow 1~2 cm error, which will not affect the use.  Toy statues are handmade colors. Due to differences in light, environment and display, products and pictures may have a certain color difference, but will not affect the use, please refer to the actual product.',
+    averageRating: 0,
+    quantity: 1,
+    reviews: [
+      {
+        userName: 'Karl_drugstore',
+        rating: 5,
+        comment:
+          'I want Hinata to be my wife. This product will make my dream come true!',
+      },
+      {
+        userName: 'AnnSamnida',
+        rating: 5,
+        comment: 'The product was way better than expected! Thank you, seller!',
+      },
+      {
+        userName: 'Albayde705',
+        rating: 2,
+        comment: 'Second purchase. I hate it.',
+      },
+    ],
+  },
+  {
     id: 92021009,
     photo: 'assets/images/tomoyo-daidouji.png',
-    name: 'Banpresto Cardcaptor Sakura Clear Card Q posket Petit vol.1(C:TOMOYO DAIDOUJI), Multiple Colors (BP16948)',
+    name: 'TOMOYO DAIDOUJI',
     price: 785,
     description:
       'CARDCAPTOR SAKURA CLEAR CARD figure from Banpresto! Base Stand included. Multiple Colors',
@@ -268,7 +267,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 1020210010,
     photo: 'assets/images/shoto.png',
-    name: 'Banpresto My Hero Academia Figure Colosseum Vol.2 Dabi (Ver.A) Collectible Figure',
+    name: 'Shoto Todoroki',
     price: 1360.5,
     description:
       "The Figure Colosseum collection continues with My Hero Academia's villain, Dabi! He's sauntering towards the heroes in a menacing stance, the perfect threat to add to your collection. 6 inches tall, PVC, Imported.",
@@ -298,7 +297,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 1120210011,
     photo: 'assets/images/all-might.png',
-    name: 'Kotobukiya ARTFX J All Might',
+    name: 'All Might',
     price: 5320,
     description:
       'The latest character to join Kotobukiya’s ARTFX J lineup from the hit anime series My Hero Academia is All Might! The sculpture was developed based on the concept of ‘facing up against villains.’ All Might comes to life full of strength which can be seen through his stance and his mighty fists. Take notice of the detailed sculpt of his well trained and sturdy muscles that are a fitting representation of the ‘Symbol of Peace.’ Display alongside previously released Izuku Midoriya and the rest of the characters to recreate the world of My Hero Academia!',
@@ -327,7 +326,7 @@ export const PRODUCTS: Product[] = [
   {
     id: 1220210012,
     photo: 'assets/images/hawks.png',
-    name: 'Kotobukiya ARTFX J Hawks',
+    name: 'Hawks',
     price: 9000,
     description:
       'From the hit anime series My Hero Academia, the Wing Hero “Hawks” is joining Kotobukiya’s scale figure lineup! Hawks is portrayed in the moment as he is facing off against a villain. The statue’s action-packed posing shows the hero ready to use his wings as swords. Be sure to also take notice of the detailed and dynamic sculpting of his two wings. Add this stunningly detailed piece to your collection today!',
