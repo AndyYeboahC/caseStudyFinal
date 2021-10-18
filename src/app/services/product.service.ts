@@ -12,6 +12,7 @@ export class ProductService {
   public productList = new BehaviorSubject<any>([]);
 
   constructor(private interactionService: InteractionService) {}
+
   getProducts(): Observable<Product[]> {
     const products = of(PRODUCTS);
     this.interactionService.add('InteractionService: fetched products');
@@ -38,7 +39,7 @@ export class ProductService {
     this.cartItemList.push(productItem);
     this.productList.next(this.cartItemList);
     this.getTotalPrice();
-    //console.log(this.cartItemList); ----> TO check if working uncomment this.
+    // console.log(this.cartItemList); 
   }
 
   getTotalPrice(): number {
