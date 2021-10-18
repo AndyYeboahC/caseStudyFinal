@@ -13,6 +13,7 @@ export class AddToCartPageComponent implements OnInit {
   public grandTotal !: number ;
   public newQuantity : any;
   public net !: number ;
+  public totalItem: number = 0;
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
@@ -20,6 +21,8 @@ export class AddToCartPageComponent implements OnInit {
       this.products = res;
       this.grandTotal = this.productService.getTotalPrice();
       this.net = this.grandTotal * this.products.quantity;
+      this.totalItem = res.length;
+      
     })
   }
 
