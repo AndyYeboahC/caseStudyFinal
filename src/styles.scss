@@ -2,21 +2,30 @@
 $font-family: Arial, Helvetica, sans-serif;
 $base-color: #e7e0c9;
 $primary-color: #789ec2;
-$secondary-color: #ffd60a;
-$accent-color: #003566;
-$text-color: #ffd60a;
+$secondary-color: #003566;
+$accent-color: #fff;
+$text-color: #003566;
 
 h1 {
   color: $secondary-color;
   font-family: $font-family;
   font-size: 250%;
 }
-h2,
+h2
+{
+  color: $text-color;
+}
+
 h3 {
   color: $primary-color;
   font-family: $font-family;
   font-weight: lighter;
 }
+
+h5 {
+  font-weight: 600;
+}
+
 
 body {
   display: flex;
@@ -46,6 +55,14 @@ button {
   padding-left: 55px;
 }
 
+.products {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  margin: 20px auto;
+}
 /* footer */
 
 /* Importing Bootstrap SCSS file. */
