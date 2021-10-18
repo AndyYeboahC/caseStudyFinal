@@ -1,6 +1,6 @@
 <!--navbar-->
 <nav class="navbar navbar-expand-lg navbar-custom justify-content-between">
-  <a class="navbar-brand mt-lg-0" href="">Shop Name</a>
+  <a class="navbar-brand mt-lg-0" routerLink='/dashboard'>Shop Name</a>
 
     <!--search bar-->
       <div class="input-group w-50">
@@ -11,7 +11,7 @@
           placeholder="Search"
           aria-label="Search"
         />
-        <button class="btn btn-outline-light" type="submit" (click)="getInput(searchInput)" [disabled]="searchInput==''">Search</button>
+        <button class="btn btn-outline-light" type="submit" (click)="getInput(searchInput); searchInput=''" [disabled]="searchInput==''">Search</button>
       </div>
 
     <!--Cart-->
