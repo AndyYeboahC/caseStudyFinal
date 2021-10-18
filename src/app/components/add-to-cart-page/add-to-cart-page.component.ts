@@ -11,12 +11,14 @@ export class AddToCartPageComponent implements OnInit {
   public products : any = [];
   public grandTotal !: number ;
   public newQuantity : any;
+  public totalItem: number = 0;
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {
     this.productService.getItems().subscribe(res=>{
       this.products = res;
       this.grandTotal = this.productService.getTotalPrice();
+      this.totalItem = res.length;
     })
   }
 
