@@ -6,6 +6,7 @@ export interface Product {
   description: string;
   averageRating: number;
   reviews: IReviews[];
+  quantity: number,
 }
 
 export interface IReviews {

@@ -1,38 +1,37 @@
-<input
-          class="search-input"
-          name="search"
-          [(ngModel)]='listFilter'
-          placeholder="Search"
+
+<h1 *ngIf="filteredProducts.length==1">{{ filteredProducts.length }} match for {{_searchInput}}</h1>
+<h1 *ngIf="filteredProducts.length>1">{{ filteredProducts.length }} matches for {{_searchInput}}</h1>
+<h1 *ngIf="filteredProducts.length==0"> No matches found for {{_searchInput}} </h1>
+<div class="products">
+  <!--container-->
+
+  <a *ngFor="let product of filteredProducts" routerLink="/detail/{{ product.id }}">
+    <div class="product">
+      <!--card-->
+      <div class="product-thumb-container">
+        <img
+          *ngIf="product.photo"
+          src="{{ product.photo }}"
+          alt="thumbnail"
+          class="product-thumbnail"
         />
-    <button class="search-btn">Search</button>
+        <p *ngIf="!product.photo">No image</p>
+      </div>
 
-<h1 *ngIf="filteredProducts.length">{{ filteredProducts.length }} matches for {{listFilter}}</h1>
-
-<section>
-    <div class="products">
-      <!--container-->
-      <a *ngFor="let product of filteredProducts" routerLink="/detail/{{ product.id }}">
-        <div class="product">
-          <!--card-->
-          <div class="product-thumb-container">
-            <img
-              *ngIf="product.photo"
-              src="{{ product.photo }}"
-              alt="thumbnail"
-              class="product-thumbnail"
-            />
-            <p *ngIf="!product.photo">No image</p>
-          </div>
-          <div class="product-description">
-            <p class="product-name">{{ product.name }}</p>
-            <div class="product-platforms">
-              <ul *ngFor="let review of product.reviews">
-                <li>{{ review.comment.length }}</li>
-                <li>{{ review.rating }}</li>
-              </ul>
-            </div>
-          </div>
+      <div class="product-description">
+        <p class="product-name">{{ product.name }}</p>
+        <h1>{{ product.averageRating | number: '1.1-1' }}</h1>
+        <!-- reviews iteration -->
+        <div
+          class="product-platforms"
+          *ngFor="let review of product.reviews; let i = index"
+        >
+          <li>
+            <!-- {{ sum }} -->
+          </li>
         </div>
-      </a>
+        <!-- reviews iteration -->
+      </div>
     </div>
-  </section>
+  </a>
+</div>

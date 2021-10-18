@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { faStar } from '@fortawesome/free-solid-svg-icons';
 
 import { ProductDetailPageComponent } from './product-detail-page.component';
 

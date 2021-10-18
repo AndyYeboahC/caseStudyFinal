@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject, Observable, of } from 'rxjs';
 
-import { IReviews, Product } from '../models/product.interface';
+import { Product } from '../models/product.interface';
 import { PRODUCTS } from 'src/app/models/product.mock';
 import { InteractionService } from './interaction.service';
 @Injectable({
@@ -12,6 +12,7 @@ export class ProductService {
   public productList = new BehaviorSubject<any>([]);
 
   constructor(private interactionService: InteractionService) {}
+
   getProducts(): Observable<Product[]> {
     const products = of(PRODUCTS);
     this.interactionService.add('InteractionService: fetched products');
@@ -38,7 +39,7 @@ export class ProductService {
     this.cartItemList.push(productItem);
     this.productList.next(this.cartItemList);
     this.getTotalPrice();
-    //console.log(this.cartItemList); ----> TO check if working uncomment this.
+    // console.log(this.cartItemList); 
   }
 
   getTotalPrice(): number {
@@ -61,5 +62,17 @@ export class ProductService {
   removeAllCart() {
     this.cartItemList = [];
     this.productList.next(this.cartItemList);
+  }
+
+  // Search
+  searchTerm = '';
+
+  updateSearchTerm(input: string) {
+    this.searchTerm = input;
+    return this.searchTerm;
+  }
+
+  getSearchTerm(){
+    return this.searchTerm;
   }
 }
