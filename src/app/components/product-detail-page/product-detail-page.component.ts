@@ -15,7 +15,7 @@ export class ProductDetailPageComponent implements OnInit {
   product: Product | undefined;
 
   public productList: any;
-  
+
 
   constructor(
     private route: ActivatedRoute,
@@ -30,7 +30,7 @@ export class ProductDetailPageComponent implements OnInit {
       this.productList = res;
 
       this.productList.forEach((a: any,) => {
-        Object.assign(a, { quantity: 1, total: a.price });
+        Object.assign(a, { total: a.price });
       });
 
 
@@ -49,14 +49,16 @@ export class ProductDetailPageComponent implements OnInit {
   }
 
   addcart(product: any) {
-  //CHECK IF EXISTING SI ITEM NA UNG ITEM USING cartItem.id  
+  //CHECK IF EXISTING SI ITEM NA UNG ITEM USING cartItem.id
     if(this.productList.some((cartItem:any,) => cartItem.id === product.id)){
-      alert("this is already in your cart")
-  // first attempt, quantity will be = to 1 because of line 32 to 33... what we need is grab that quantity then increment by 1    
+      product.quantity++;
+
+
+  // first attempt, quantity will be = to 1 because of line 32 to 33... what we need is grab that quantity then increment by 1
     } else {
-  // KUNG WALA, ILALAGAY NYA UNG ITEM NA UN SA ARRAY.. CALLING addtoCart    
+  // KUNG WALA, ILALAGAY NYA UNG ITEM NA UN SA ARRAY.. CALLING addtoCart
       let cartItem = this.productService.addtoCart(product);
-      
+      product.quantity++;
     }
   }
 }
