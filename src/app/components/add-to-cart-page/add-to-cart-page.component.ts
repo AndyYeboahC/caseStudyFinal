@@ -10,6 +10,7 @@ export class AddToCartPageComponent implements OnInit {
 
   public products : any = [];
   public grandTotal !: number ;
+  public newQuantity : any;
   constructor(private productService: ProductService) { }
 
   ngOnInit(): void {

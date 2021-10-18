@@ -30,7 +30,7 @@ export class ProductDetailPageComponent implements OnInit {
       this.productList = res;
 
       this.productList.forEach((a: any,) => {
-        Object.assign(a, { total: a.price });
+        Object.assign(a, { quantity: 1, total: a.price });
       });
 
 
@@ -50,10 +50,10 @@ export class ProductDetailPageComponent implements OnInit {
 
   addcart(product: any) {
   //CHECK IF EXISTING SI ITEM NA UNG ITEM USING cartItem.id
-    if(this.productList.some((cartItem:any,) => cartItem.id === product.id)){
-      console.log(product.quantity);
-      product.quantity++;
-      console.log(product.quantity);
+    if(this.productList.some((cartItem:any,newQuantity:number) => cartItem.id === product.id)){
+      this.productService.addtoCart(product);
+      let newQuantity = product.quantity;
+      console.log(this.product?.quantity);
 
 
   // first attempt, quantity will be = to 1 because of line 32 to 33... what we need is grab that quantity then increment by 1
