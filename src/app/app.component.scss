@@ -23,7 +23,8 @@ nav a.active {
 }
 
 .navbar-custom {
-  background-color: $primary-color;
+  background-color: $base-color;
+  border-bottom: 3px solid $primary-color;
 }
 
 #footer {
