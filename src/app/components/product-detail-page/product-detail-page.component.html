@@ -8,15 +8,16 @@
   <div class="productDetails-container">
     <div class="container-fluid">
       <div class="row">
+
         <!--product image-->
-        <div class="col img-container" *ngIf="product">
+        <div class="col-sm-6 img-container" *ngIf="product">
           <img src="{{ product.photo }}" class="img-fluid" />
         </div>
 
         <!--product details-->
-        <div class="col-sm-5">
+        <div class="col-sm-6 details">
           <div *ngIf="product">
-            <h2 class="productName" >{{ product.name | uppercase }}</h2>
+            <h1 class="productName" >{{ product.name | uppercase }}</h1>
             <p>
               <star-rating [rating]="product.averageRating"></star-rating
               >{{ product.averageRating | number: "1.1-1" }}✩ ({{
@@ -30,19 +31,19 @@
         </div>
 
           <!--addutucaatu-->
-          <div class="row addToCart-container w-100 justify-content-center">
-            <button
+          <div class="row addToCart-container">
+            <button class="btn btn-warning w-100"
               (click)="addcart(product)"
               type="button"
-              class="btn btn-outline-warning"
-              routerLink="/cart"
-            >
+              routerLink="/cart">
               Add to Cart
             </button>
           </div>
+        </div>
 
           <!--review block-->
-            <div class="reviews-container">
+          <div class="row w-100 justify-content-center">
+            <div class="col-sm-7 reviews-container">
               <h1>Reviews</h1>
               <div *ngIf="product">
                 <div class="reviews" *ngFor="let reviews of product.reviews">
@@ -57,7 +58,9 @@
               </div>
             </div>
           </div>
-        </div>
+
+          </div>
+
       </div>
     </div>
 </body>
