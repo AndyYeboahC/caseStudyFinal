@@ -31,8 +31,8 @@ export class AppComponent implements OnInit {
   }
   set searchInput(value: string) {
     this._searchInput = value;
-   // this.filteredProducts = this.performSearch(value);
   }
+  
   getInput(searchInput: string) {
     this.productService.updateSearchTerm(this._searchInput);
     this.router.navigateByUrl('/search/'+this._searchInput);
