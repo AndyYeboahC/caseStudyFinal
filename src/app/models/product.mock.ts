@@ -31,6 +31,68 @@ export const PRODUCTS: Product[] = [
     ],
   },
   {
+    id: 72021007,
+    photo: 'assets/images/hyuga-hinata.png',
+    name: 'Hyuga Hinata',
+    price: 5299,
+    description:
+      'Due to manual measurement, please allow 1~2 cm error, which will not affect the use.  Toy statues are handmade colors. Due to differences in light, environment and display, products and pictures may have a certain color difference, but will not affect the use, please refer to the actual product.',
+    averageRating: 0,
+    quantity: 0,
+    reviews: [
+      {
+        userName: 'Karl_drugstore',
+        rating: 5,
+        comment:
+          'I want Hinata to be my wife. This product will make my dream come true!',
+      },
+      {
+        userName: 'AnnSamnida',
+        rating: 5,
+        comment: 'The product was way better than expected! Thank you, seller!',
+      },
+      {
+        userName: 'Albayde705',
+        rating: 2,
+        comment: 'Second purchase. I hate it.',
+      },
+    ],
+  },
+  {
+    id: 42021004,
+    photo: 'assets/images/gaara.png',
+    name: 'Yuzawa Gaara',
+    price: 8799,
+    description:
+      'Please note: Due to manual measurement, please allow 1~2 cm error, which will not affect the use.  Toy statues are handmade colors. Due to differences in light, environment and display, products and pictures may have a certain color difference, but will not affect the use, please refer to the actual product.',
+    averageRating: 0,
+    quantity: 0,
+    reviews: [
+      {
+        userName: 'CamsAmnida',
+        rating: 1,
+        comment:
+          'Anobayaaan. Si Hinata inorder kow tpos c etong L@laKe ung dHumateng. Cnu bha 2?????',
+      },
+      {
+        userName: 'Yeboi19',
+        rating: 5,
+        comment:
+          'THIS IS LIIIIIIIT! AMAZING PRODUCT! Will definitely purchase another one!',
+      },
+      {
+        userName: 'BubbleBath',
+        rating: 5,
+        comment: 'WOOOOOOOOOOOOWWWWWWWW',
+      },
+      {
+        userName: 'Albayde705',
+        rating: 5,
+        comment: 'SOLLIIIIIIIDDDDDDDDDDDDDDDDDDDD',
+      },
+    ],
+  },
+  {
     id: 22021002,
     photo: 'assets/images/titan.png',
     name: 'Colossal Titan',
@@ -56,6 +118,96 @@ export const PRODUCTS: Product[] = [
         rating: 5,
         comment:
           'This figure/model goes beyond expectations. I have had this item for 2-3 weeks now and am still marvelling at it. The pieces have great attention to detail.',
+      },
+    ],
+  },
+
+  {
+    id: 52021005,
+    photo: 'assets/images/li-syaoran.png',
+    name: 'Li Syaoran',
+    price: 9395,
+    description:
+      'Li crouches, holding his sword aloft and ready for battle, on a specially designed base. A high level of detail and great attention to colors is created to bring the character to life. Sculpted by Yoshinori Ito, Li Syaoran is just over 9 inches tall (1/7 scale) as he prepares to leap off of an angled display base featuring intricate symbols and designs on a large gold tile.  Li will be an awesome centerpiece in your collection, and he’s the perfect partner for the previously released Sakura Kinomoto!',
+    averageRating: 0,
+    quantity: 0,
+    reviews: [
+      {
+        userName: 'willOfFortune',
+        rating: 4,
+        comment: 'This is so cool!! A great addition to my collection!',
+      },
+      {
+        userName: 'mamaMu00',
+        rating: 2,
+        comment:
+          'Ganda sana kaso may onting damage natanggap ko di ko alam kung kasalanan ng courier o ng seller tsk',
+      },
+      {
+        userName: 'Alsipsclar',
+        rating: 5,
+        comment:
+          'Very realistic!! Love the colors and the pose!! I also like the material',
+      },
+      {
+        userName: 'mhie71',
+        rating: 3,
+        comment:
+          'Kala q may movable parts waley pala :(( Pero maganda naman shea pogi pa rin ng Shaoran ko hihi',
+      },
+    ],
+  },
+
+  {
+    id: 82021008,
+    photo: 'assets/images/sakura-kinomoto.png',
+    name: 'Sakura Kinomoto',
+    price: 6448.25,
+    description:
+      'A Max Factory import. From the classic manga series. Smooth yet poseable joint. Includes wand and Kerberos sidekick. Articulated figma stand.',
+    averageRating: 0,
+    quantity: 0,
+    reviews: [
+      {
+        userName: 'Leximborg_11',
+        rating: 5,
+        comment:
+          'Gandizzzz! Pak na pak si Sakura! Kuhang-kuha itsura mula sa anime. Sakit sa bulsa pero worth it!',
+      },
+      {
+        userName: 'AndyLody',
+        rating: 1,
+        comment:
+          'This doll is a curse!!! Gave this as a gift to my girlfriend. But we broke up. She loved it tho. Pero nagsayang lang ako ng pera hayst',
+      },
+    ],
+  },
+  {
+    id: 1120210011,
+    photo: 'assets/images/all-might.png',
+    name: 'All Might',
+    price: 5320,
+    description:
+      'The latest character to join Kotobukiya’s ARTFX J lineup from the hit anime series My Hero Academia is All Might! The sculpture was developed based on the concept of ‘facing up against villains.’ All Might comes to life full of strength which can be seen through his stance and his mighty fists. Take notice of the detailed sculpt of his well trained and sturdy muscles that are a fitting representation of the ‘Symbol of Peace.’ Display alongside previously released Izuku Midoriya and the rest of the characters to recreate the world of My Hero Academia!',
+    averageRating: 0,
+    quantity: 0,
+    reviews: [
+      {
+        userName: 'TotallyNotMidoriya',
+        rating: 5,
+        comment:
+          '1000000000000000000/5!!! It deserves a higher rating!! The details are perfect! The painted red lines stood out well against the blue. A true to life figurine of All Might!',
+      },
+      {
+        userName: 'HandsAndFaces',
+        rating: 1,
+        comment:
+          'Wanted to see what the hype was about. Not worth it. If I could rate it a negative, I would. What an eyesore.',
+      },
+      {
+        userName: 'arcadecola',
+        rating: 4,
+        comment: 'PLUS ULTRAAAAAAAAAAA',
       },
     ],
   },
@@ -95,75 +247,7 @@ export const PRODUCTS: Product[] = [
       },
     ],
   },
-  {
-    id: 42021004,
-    photo: 'assets/images/gaara.png',
-    name: 'Yuzawa Gaara',
-    price: 8799,
-    description:
-      'Please note: Due to manual measurement, please allow 1~2 cm error, which will not affect the use.  Toy statues are handmade colors. Due to differences in light, environment and display, products and pictures may have a certain color difference, but will not affect the use, please refer to the actual product.',
-    averageRating: 0,
-    quantity: 0,
-    reviews: [
-      {
-        userName: 'CamsAmnida',
-        rating: 1,
-        comment:
-          'Anobayaaan. Si Hinata inorder kow tpos c etong L@laKe ung dHumateng. Cnu bha 2?????',
-      },
-      {
-        userName: 'Yeboi19',
-        rating: 5,
-        comment:
-          'THIS IS LIIIIIIIT! AMAZING PRODUCT! Will definitely purchase another one!',
-      },
-      {
-        userName: 'BubbleBath',
-        rating: 5,
-        comment: 'WOOOOOOOOOOOOWWWWWWWW',
-      },
-      {
-        userName: 'Albayde705',
-        rating: 5,
-        comment: 'SOLLIIIIIIIDDDDDDDDDDDDDDDDDDDD',
-      },
-    ],
-  },
-  {
-    id: 52021005,
-    photo: 'assets/images/li-syaoran.png',
-    name: 'Li Syaoran',
-    price: 9395,
-    description:
-      'Li crouches, holding his sword aloft and ready for battle, on a specially designed base. A high level of detail and great attention to colors is created to bring the character to life. Sculpted by Yoshinori Ito, Li Syaoran is just over 9 inches tall (1/7 scale) as he prepares to leap off of an angled display base featuring intricate symbols and designs on a large gold tile.  Li will be an awesome centerpiece in your collection, and he’s the perfect partner for the previously released Sakura Kinomoto!',
-    averageRating: 0,
-    quantity: 0,
-    reviews: [
-      {
-        userName: 'willOfFortune',
-        rating: 4,
-        comment: 'This is so cool!! A great addition to my collection!',
-      },
-      {
-        userName: 'mamaMu00',
-        rating: 2,
-        comment:
-          'Ganda sana kaso may onting damage natanggap ko di ko alam kung kasalanan ng courier o ng seller tsk',
-      },
-      {
-        userName: 'Alsipsclar',
-        rating: 5,
-        comment:
-          'Very realistic!! Love the colors and the pose!! I also like the material',
-      },
-      {
-        userName: 'mhie71',
-        rating: 3,
-        comment:
-          'Kala q may movable parts waley pala :(( Pero maganda naman shea pogi pa rin ng Shaoran ko hihi',
-      },
-    ],
-  },
+
   {
     id: 62021006,
     photo: 'assets/images/mikasa.png',
@@ -191,58 +275,6 @@ export const PRODUCTS: Product[] = [
         rating: 5,
         comment:
           'This figure/model goes beyond expectations. I have had this item for 2-3 weeks now and am still marvelling at it. The pieces have great attention to detail.',
-      },
-    ],
-  },
-  {
-    id: 82021008,
-    photo: 'assets/images/sakura-kinomoto.png',
-    name: 'Sakura Kinomoto',
-    price: 6448.25,
-    description:
-      'A Max Factory import. From the classic manga series. Smooth yet poseable joint. Includes wand and Kerberos sidekick. Articulated figma stand.',
-    averageRating: 0,
-    quantity: 0,
-    reviews: [
-      {
-        userName: 'Leximborg_11',
-        rating: 5,
-        comment:
-          'Gandizzzz! Pak na pak si Sakura! Kuhang-kuha itsura mula sa anime. Sakit sa bulsa pero worth it!',
-      },
-      {
-        userName: 'AndyLody',
-        rating: 1,
-        comment:
-          'This doll is a curse!!! Gave this as a gift to my girlfriend. But we broke up. She loved it tho. Pero nagsayang lang ako ng pera hayst',
-      },
-    ],
-  },
-  {
-    id: 72021007,
-    photo: 'assets/images/hyuga-hinata.png',
-    name: 'Hyuga Hinata',
-    price: 5299,
-    description:
-      'Due to manual measurement, please allow 1~2 cm error, which will not affect the use.  Toy statues are handmade colors. Due to differences in light, environment and display, products and pictures may have a certain color difference, but will not affect the use, please refer to the actual product.',
-    averageRating: 0,
-    quantity: 0,
-    reviews: [
-      {
-        userName: 'Karl_drugstore',
-        rating: 5,
-        comment:
-          'I want Hinata to be my wife. This product will make my dream come true!',
-      },
-      {
-        userName: 'AnnSamnida',
-        rating: 5,
-        comment: 'The product was way better than expected! Thank you, seller!',
-      },
-      {
-        userName: 'Albayde705',
-        rating: 2,
-        comment: 'Second purchase. I hate it.',
       },
     ],
   },
@@ -294,35 +326,7 @@ export const PRODUCTS: Product[] = [
       },
     ],
   },
-  {
-    id: 1120210011,
-    photo: 'assets/images/all-might.png',
-    name: 'All Might',
-    price: 5320,
-    description:
-      'The latest character to join Kotobukiya’s ARTFX J lineup from the hit anime series My Hero Academia is All Might! The sculpture was developed based on the concept of ‘facing up against villains.’ All Might comes to life full of strength which can be seen through his stance and his mighty fists. Take notice of the detailed sculpt of his well trained and sturdy muscles that are a fitting representation of the ‘Symbol of Peace.’ Display alongside previously released Izuku Midoriya and the rest of the characters to recreate the world of My Hero Academia!',
-    averageRating: 0,
-    quantity: 0,
-    reviews: [
-      {
-        userName: 'TotallyNotMidoriya',
-        rating: 5,
-        comment:
-          '1000000000000000000/5!!! It deserves a higher rating!! The details are perfect! The painted red lines stood out well against the blue. A true to life figurine of All Might!',
-      },
-      {
-        userName: 'HandsAndFaces',
-        rating: 1,
-        comment:
-          'Wanted to see what the hype was about. Not worth it. If I could rate it a negative, I would. What an eyesore.',
-      },
-      {
-        userName: 'arcadecola',
-        rating: 4,
-        comment: 'PLUS ULTRAAAAAAAAAAA',
-      },
-    ],
-  },
+
   {
     id: 1220210012,
     photo: 'assets/images/hawks.png',

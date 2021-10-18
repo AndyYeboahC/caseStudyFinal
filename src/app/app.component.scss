@@ -1,5 +1,5 @@
 /* AppComponent's private CSS styles */
-@import './../styles.scss';
+@import "./../styles.scss";
 
 h1 {
   margin-bottom: 0;
@@ -29,7 +29,7 @@ nav a.active {
 #footer {
   margin-top: auto;
   background-color: $primary-color;
-  font-family: 'Lucida Sans';
+  font-family: "Lucida Sans";
   position: static;
   color: $base-color;
   height: 60px;
@@ -37,4 +37,13 @@ nav a.active {
   width: 100%;
   text-align: center;
   padding: 15px;
+}
+
+.btn {
+  // background: #11324d;
+
+  &:hover {
+    background: #11324d;
+    color: #fff;
   }
+}
