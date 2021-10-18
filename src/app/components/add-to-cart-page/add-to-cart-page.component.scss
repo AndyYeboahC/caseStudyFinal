@@ -1,8 +1,15 @@
-.ng-container {
-    background-color: aqua;
-}
+
 .container {
     min-height: 80vh;
+    min-width: 1500px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin-bottom: 20px;
+}
+.card-title {
+    margin-bottom: 0;
+    padding: 5px;
 }
 .productadded {
     width: 300px;
@@ -33,4 +40,14 @@
     display: flex;
     margin-block-start: 0;
     margin-block-end: 0;
+}
+
+.header {
+    width: 200px;
+}
+.btn {
+    width: 150px;
+}
+.btn-danger {
+    border-radius: 5px;
 }

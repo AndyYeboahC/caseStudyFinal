@@ -13,7 +13,7 @@
                 <th>Product Image</th>
                 <th>Price</th>
                 <th>Quantity</th>
-                <th>Total</th>
+                <th>Sub Total</th>
                 <th>Action</th>
               </tr>
             </thead>
@@ -28,30 +28,31 @@
                     alt="where is it"
                   />
                 </td>
-                <td>{{ item.price }}</td>
+                <td>{{ item.price | currency: "PHP":"₱" }}</td>
                 <td>{{ item.quantity }}</td>
-                <td>{{ item.total }}</td>
+                <td>{{ item.total * item.quantity | currency: "PHP":"₱" }}</td>
                 <td>
-                  <button (click)="removeItem(item)" class="btn btn-danger">
+                  <button (click)="removeItem(item)" class=" btn-danger">
                     <i class="fas fa-trash-alt"></i>
                   </button>
                 </td>
               </tr>
               <tr>
-                <td colspan="2"></td>
+                <td colspan="3"></td>
                 <td>
                   <button (click)="emptycart()" class="btn btn-danger">
                     Empty Cart
                   </button>
                 </td>
+
                 <td>
                   <button routerLink="/" class="btn btn-primary">
                     Shop More
                   </button>
                 </td>
-                <td><button class="btn btn-success">Check Out</button></td>
+                
                 <td>
-                  <strong>Grand Total : ${{ grandTotal }}</strong>
+                  <strong>Grand Total : {{ grandTotal | currency: "PHP":"₱" }}</strong>
                 </td>
               </tr>
             </tbody>
@@ -63,10 +64,10 @@
   
   <ng-container *ngIf="products.length == 0">
     <div class="container">
-      <div class="card">
-        <h5 class="card-title">My Cart</h5>
-      </div>
       <div class="center">
+        <div class="card">
+          <h1 class="card-title">My Cart({{ totalItem }})</h1>
+        </div>
         <img
           class="emptycartpic"
           src="../../../assets/emptycart.png"
