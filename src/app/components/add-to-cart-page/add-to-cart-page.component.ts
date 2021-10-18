@@ -8,7 +8,6 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class AddToCartPageComponent implements OnInit {
   public products: any = [];
-  public gross!: number;
   public grandTotal!: number;
   public totalItem: number = 0;
   constructor(private productService: ProductService) {}
@@ -18,7 +17,6 @@ export class AddToCartPageComponent implements OnInit {
       this.products = res;
       this.grandTotal = this.productService.getTotalPrice();
       this.totalItem = res.length;
-      this.gross = this.products.quantity * this.products.price;
     });
   }
 
