@@ -45,19 +45,20 @@
     </div>    
 </ng-container>
 
-<ng-container *ngIf="products.length == 0"> 
-
-
-<div class="container">
+<ng-container *ngIf="products.length == 0">
+  <div class="container">
     <div class="card">
-        <h5 class = "card-title">My Cart</h5>
+      <h5 class="card-title">My Cart</h5>
     </div>
-    <div class = "center">
-        <img class="emptycartpic" src="../../../assets/emptycart.png"alt="wheres the pic">
-        <h4>Your cart is empty!</h4>
-        <h6>Add item to it now</h6>
-        <button routerLink="/dashboard" class="btn btn-primary">Shop Now</button>
+    <div class="center">
+      <img
+        class="emptycartpic"
+        src="../../../assets/emptycart.png"
+        alt="wheres the pic"
+      />
+      <h4>Your cart is empty!</h4>
+      <h6>Add item to it now</h6>
+      <button routerLink="/dashboard" class="btn btn-primary">Shop Now</button>
     </div>
-</div>
-
+  </div>
 </ng-container>

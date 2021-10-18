@@ -1,7 +1,54 @@
 <body>
   <div class="main">
-    <div class="main-head">
-      <!-- <h1 class="main-head-text">THIS IS THE MAIN HEAD SPACE</h1> -->
+    <!-- <div class="main-head"> -->
+    <!-- <h1 class="main-head-text">THIS IS THE MAIN HEAD SPACE</h1> -->
+    <!-- </div> -->
+    <div class="main-advert">
+      <div class="main-advert-vid">
+        <video autoplay muted loop class="main-advert-vid-video">
+          <source
+            src="./../../../assets/videos/narutoVid.mp4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+        <div class="main-advert-vid-text">
+          <button
+            *ngFor="let product of products | slice: 0:1"
+            routerLink="/detail/{{ product.id }}"
+          >
+            VIEW UZUMAKI NARUTO
+          </button>
+        </div>
+      </div>
+      <div class="products">
+        <!--container-->
+        <a
+          *ngFor="let product of products | slice: 0:1"
+          routerLink="/detail/{{ product.id }}"
+        >
+          <div class="product">
+            <!--card-->
+            <div class="product-thumbnail">
+              <img
+                *ngIf="product.photo"
+                src="{{ product.photo }}"
+                alt="thumbnail"
+                class="product-thumb"
+              />
+              <p *ngIf="!product.photo">No image</p>
+            </div>
+
+            <div class="product-description">
+              <h1 class="product-name">{{ product.name }}</h1>
+              <br />
+              <h2>{{ product.price | currency: "PHP":"₱" }}</h2>
+              <star-rating [rating]="product.averageRating"></star-rating>
+              <h4>{{ product.reviews.length }} Reviews</h4>
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
 
     <div class="main-products">
@@ -9,7 +56,7 @@
         <div class="products">
           <!--container-->
           <a
-            *ngFor="let product of products | slice: 0:2"
+            *ngFor="let product of products | slice: 1:7"
             routerLink="/detail/{{ product.id }}"
           >
             <div class="product">
@@ -36,11 +83,13 @@
         </div>
       </div>
     </div>
+
+    <!-- ============================================================= -->
     <div class="main-advert">
       <div class="products">
         <!--container-->
         <a
-          *ngFor="let product of products | slice: 2:3"
+          *ngFor="let product of products | slice: 7:8"
           routerLink="/detail/{{ product.id }}"
         >
           <div class="product">
@@ -75,7 +124,7 @@
         </video>
         <div class="main-advert-vid-text">
           <button
-            *ngFor="let product of products | slice: 2:3"
+            *ngFor="let product of products | slice: 7:8"
             routerLink="/detail/{{ product.id }}"
           >
             VIEW ACKERMAN LEVI
@@ -83,87 +132,6 @@
         </div>
       </div>
     </div>
-    <!-- ============================================================= -->
-    <div class="main-products">
-      <div class="main-products-dashboard">
-        <div class="products">
-          <!--container-->
-          <a
-            *ngFor="let product of products | slice: 3:7"
-            routerLink="/detail/{{ product.id }}"
-          >
-            <div class="product">
-              <!--card-->
-              <div class="product-thumbnail">
-                <img
-                  *ngIf="product.photo"
-                  src="{{ product.photo }}"
-                  alt="thumbnail"
-                  class="product-thumb"
-                />
-                <p *ngIf="!product.photo">No image</p>
-              </div>
-
-              <div class="product-description">
-                <h1 class="product-name">{{ product.name }}</h1>
-                <br />
-                <h2>{{ product.price | currency: "PHP":"₱" }}</h2>
-                <star-rating [rating]="product.averageRating"></star-rating>
-                <h4>{{ product.reviews.length }} Reviews</h4>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-    <div class="main-advert">
-      <div class="main-advert-vid">
-        <video autoplay muted loop class="main-advert-vid-video">
-          <source
-            src="./../../../assets/videos/narutoVid.mp4"
-            type="video/mp4"
-          />
-          Your browser does not support the video tag.
-        </video>
-        <div class="main-advert-vid-text">
-          <button
-            *ngFor="let product of products | slice: 7:8"
-            routerLink="/detail/{{ product.id }}"
-          >
-            VIEW HYUGA HINATA
-          </button>
-        </div>
-      </div>
-      <div class="products">
-        <!--container-->
-        <a
-          *ngFor="let product of products | slice: 7:8"
-          routerLink="/detail/{{ product.id }}"
-        >
-          <div class="product">
-            <!--card-->
-            <div class="product-thumbnail">
-              <img
-                *ngIf="product.photo"
-                src="{{ product.photo }}"
-                alt="thumbnail"
-                class="product-thumb"
-              />
-              <p *ngIf="!product.photo">No image</p>
-            </div>
-
-            <div class="product-description">
-              <h1 class="product-name">{{ product.name }}</h1>
-              <br />
-              <h2>{{ product.price | currency: "PHP":"₱" }}</h2>
-              <star-rating [rating]="product.averageRating"></star-rating>
-              <h4>{{ product.reviews.length }} Reviews</h4>
-            </div>
-          </div>
-        </a>
-      </div>
-    </div>
-    <!-- ======================================================================= -->
     <div class="main-products">
       <div class="main-products-dashboard">
         <div class="products">
@@ -196,5 +164,6 @@
         </div>
       </div>
     </div>
+    <!-- ======================================================================= -->
   </div>
 </body>

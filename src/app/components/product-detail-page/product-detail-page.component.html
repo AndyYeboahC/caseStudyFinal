@@ -1,5 +1,4 @@
 <body>
-
   <!--back navigation-->
   <div class="back">
     <a (click)="goBack()">  Back</a>
@@ -10,44 +9,59 @@
     <div class="container-fluid">
       <div class="row">
         <!--product image-->
-          <div class="col img-container" *ngIf="product" >
-            <img src="{{ product.photo }}" class="img-fluid"/>
+        <div class="col img-container" *ngIf="product">
+          <img src="{{ product.photo }}" class="img-fluid" />
         </div>
 
         <!--product details-->
         <div class="row justify-content-center">
           <div class="col-sm-6">
             <div *ngIf="product">
-              <h2 class="productName" >{{ product.name | uppercase }}</h2>
-              <p><star-rating [rating]='product.averageRating'></star-rating>{{product.averageRating | number: '1.1-1'}}✩ ({{product.reviews.length}} reviews)</p>
-              <p>id: {{product.id}}</p>
-              <p>₱{{product.price}} </p>
-              <p>{{product.description}}</p>
+              <h2 class="productName">{{ product.name | uppercase }}</h2>
+              <p>
+                <star-rating [rating]="product.averageRating"></star-rating
+                >{{ product.averageRating | number: "1.1-1" }}✩ ({{
+                  product.reviews.length
+                }}
+                reviews)
+              </p>
+              <p>id: {{ product.id }}</p>
+              <p>{{ product.price | currency: "PHP":"₱" }}</p>
+              <p>{{ product.description }}</p>
+            </div>
           </div>
-        </div>
 
-        <!--addutucaatu-->
-        <div class="row addToCart-container w-100 justify-content-center">
-          <button (click)="addcart(product)" type="button" class="btn btn-outline-warning" routerLink="/cart">Add to Cart</button>
-        </div>
+          <!--addutucaatu-->
+          <div class="row addToCart-container w-100 justify-content-center">
+            <button
+              (click)="addcart(product)"
+              type="button"
+              class="btn btn-outline-warning"
+              routerLink="/cart"
+            >
+              Add to Cart
+            </button>
+          </div>
 
-      <!--review block-->
-      <div class="row w-100 justify-content-center">
-      <div class="col-sm-8 reviews-container">
-        <h1> Reviews </h1>
+          <!--review block-->
+          <div class="row w-100 justify-content-center">
+            <div class="col-sm-8 reviews-container">
+              <h1>Reviews</h1>
               <div *ngIf="product">
                 <div class="reviews" *ngFor="let reviews of product.reviews">
-                   <h5 class="center">{{reviews.userName}}</h5>
-                   <p class="center"><star-rating [rating]='reviews.rating'></star-rating> ({{reviews.rating}}/5)</p>
-                  <p>{{reviews.comment}} </p>
+                  <h5 class="center">{{ reviews.userName }}</h5>
+                  <p class="center">
+                    <star-rating [rating]="reviews.rating"></star-rating> ({{
+                      reviews.rating
+                    }}/5)
+                  </p>
+                  <p>{{ reviews.comment }}</p>
                 </div>
               </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-  </div>
-  </div>
-
-
-  </body>
+</body>
