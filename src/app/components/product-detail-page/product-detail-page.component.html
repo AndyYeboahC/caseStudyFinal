@@ -19,7 +19,7 @@
           <div class="col-sm-6">
             <div *ngIf="product">
               <h2 class="productName" >{{ product.name | uppercase }}</h2>
-              <p><star-rating [rating]='product.averageRating'></star-rating>{{product.averageRating}}✩ ({{product.reviews.length}} reviews)</p>
+              <p><star-rating [rating]='product.averageRating'></star-rating>{{product.averageRating | number: '1.1-1'}}✩ ({{product.reviews.length}} reviews)</p>
               <p>id: {{product.id}}</p>
               <p>₱{{product.price}} </p>
               <p>{{product.description}}</p>
