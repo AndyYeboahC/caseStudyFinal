@@ -1,22 +1,43 @@
 /* AppComponent's private CSS styles */
+<<<<<<< HEAD
+=======
+@import './../styles.scss';
+>>>>>>> be56822fc2f4b8ee0c5ef9a09d315455dc24c1e9
 
 h1 {
   margin-bottom: 0;
 }
+
+.background {
+  color: $primary-color;
+}
+
 nav a {
   padding: 1rem;
-  text-decoration: none;
   margin-top: 10px;
-  display: inline-block;
-  background-color: #e8e8e8;
-  color: #3d3d3d;
-  border-radius: 4px;
+  color: $accent-color;
 }
 
 nav a:hover {
-  color: white;
-  background-color: #42545c;
+  color: $accent-color;
 }
 nav a.active {
   background-color: black;
 }
+
+.navbar-custom {
+  background-color: $primary-color;
+}
+
+#footer {
+  margin-top: auto;
+  background-color: $primary-color;
+  font-family: 'Lucida Sans';
+  position: static;
+  color: $base-color;
+  height: 60px;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  }

@@ -71,7 +71,7 @@ export class ProductService {
     this.searchTerm = input;
     return this.searchTerm;
   }
-
+  
   getSearchTerm(){
     return this.searchTerm;
   }

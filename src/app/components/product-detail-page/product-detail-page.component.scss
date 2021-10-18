@@ -1,17 +1,16 @@
-/* HeroDetailComponent's private CSS styles */
-$padding-x: 80px;
-$side-padding:100px;
-$lighter-font-color: #616161;
-$image-height: 800px;
+@import './../../../styles.scss';
+
+$image-height: 600px;
 $image-width: 400px;
 
 @mixin product-container() {
   display: flex;
-  padding: $padding-x;
-  padding-left: $side-padding;
-  padding-right: $side-padding;
   margin-right: auto;
   margin-left: auto;
+}
+
+body {
+  background-color: $base-color;
 }
 
 label {
@@ -26,40 +25,42 @@ input {
 
 button {
   margin-top: 20px;
-  background-color: #eee;
   padding: 1rem;
   border-radius: 4px;
   font-size: 1rem;
 }
 
 .img-container {
-  width:350px;
-  height:$image-height;
+  min-height: fit-content;
   overflow:hidden;
+  padding: 50px;
   img {
-    width: 100%;
-    max-width: $image-height;
-    max-height: $image-height;
+    height: $image-height;
+    object-fit: cover;
   }
 }
 
 .productDetails-container {
   @include product-container();
+  min-height: fit-content;
+  text-align: center;
+  color: $text-color;
 }
 
 .reviews-container {
-  padding: 24px;
-  margin-right: auto;
-  margin-left: auto;
+  display: block;
+  padding: 5rem 5rem;
+  text-align: justify;
 }
 
 .addToCart-container {
-  display: block;
+  align-content: center;
   padding-top: 20px;
 }
 
 h1 {
   text-align: center;
+  padding-bottom: .8em;
 }
 
 .description {
@@ -72,8 +73,20 @@ h1 {
 }
 
 .reviews {
-  color: $lighter-font-color;
+  border-top: 1px solid $secondary-color;
+  color: $text-color;
   font-weight: 300;
+  text-align: center;
+  padding: 1.2rem;
+  padding-top: 1.8rem;
+}
+
+.back {
+  padding: 30px;
+  padding-left: 50px;
+  font-weight: 600;
+  font-size: 150%;
+  color: $primary-color;
 }
 
 h5 {
