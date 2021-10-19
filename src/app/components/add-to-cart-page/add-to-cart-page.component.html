@@ -2,16 +2,16 @@
 <section>
   <ng-container *ngIf="products.length != 0">
     <div class="container">
-      <div class="card-table">
-        <div class="cart-product">
+      <div class="container-cart-table">
+        <div class="container-cart-table-product">
           <!--red-->
           <div class="header">
             <h1>My Cart({{ totalItem }})</h1>
           </div>
           <table class="table text-center">
             <!--green-->
-            <thead class="details">
-              <tr class="heading">
+            <thead class="table-details">
+              <tr class="table-heading">
                 <th>Sr. No</th>
                 <th>Product Name</th>
                 <th>Product Image</th>
@@ -21,10 +21,10 @@
                 <th>Action</th>
               </tr>
             </thead>
-            <tbody class="details">
+            <tbody class="table-details">
               <tr *ngFor="let item of products; let i = index">
-                <td class="alignCenter">{{ i + 1 }}</td>
-                <td class="alignCenter">{{ item.name }}</td>
+                <td>{{ i + 1 }}</td>
+                <td>{{ item.name }}</td>
                 <td>
                   <img
                     class="productadded"
@@ -41,7 +41,7 @@
                   </button> 
                 </td>
               </tr>
-              <tr class="heading">
+              <tr class="table-heading">
                 <td colspan="5"></td>
                 <td>
                   <strong

@@ -5,9 +5,9 @@ $primary-color: #789ec2;
 $secondary-color: #003566;
 $accent-color: #fff;
 $text-color: #003566;
-// $large-font: 25px;
-$medium-font: 25px;
-$small-font: 20px;
+$large-font: 35px;
+$medium-font: 28px;
+$small-font: 23px;
 
 h1 {
   color: $secondary-color;
@@ -268,4 +268,11 @@ section {
     // margin: center;
     z-index: -1;
   }
+}
+
+.lineRemover {
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
 }

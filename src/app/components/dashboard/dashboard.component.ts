@@ -10,33 +10,10 @@ import { PRODUCTS } from 'src/app/models/product.mock';
 })
 export class DashboardComponent implements OnInit {
   products: Product[] = [];
-  // review = PRODUCTS;
-  // rev = this.review.reviews;
+
   sum = 0;
 
-  // =====Practice array to. Napapalabas ko average pag ganito.========
-  // arrays: any = [
-  //   {
-  //     userName: 'blah',
-  //     rating: 5,
-  //     comment: 'balhj',
-  //   },
-  //   {
-  //     userName: 'blah',
-  //     rating: 5,
-  //     comment: 'balhj',
-  //   },
-  //   {
-  //     userName: 'blah',
-  //     rating: 9,
-  //     comment: 'balhj',
-  //   },
-  // ];
-  //  =====Practice array to. Napapalabas ko average pag ganito.========
-
-  constructor(private productService: ProductService) {
-    // this.getStarSum();
-  }
+  constructor(private productService: ProductService) {}
 
   ngOnInit(): void {
     this.getProducts();
@@ -48,11 +25,7 @@ export class DashboardComponent implements OnInit {
       .subscribe((products) => (this.products = products));
   }
 
-  //SUM PALANG KINIKUHA NUNG MGA FUNCTIONS BELOW
   getStarAve() {
-    // this.sum = this.arrays.reduce((acc: any, val: any) => {
-    //   return acc + val.rating;
-    // }, 0);
     for (let product of this.products) {
       let averageRating = 0;
       for (let review of product.reviews) {
@@ -61,9 +34,4 @@ export class DashboardComponent implements OnInit {
       product.averageRating = averageRating / product.reviews.length;
     }
   }
-
-  // getStarSum(num: number) {
-  //   this.sum += num;
-  //   console.log(this.sum);
-  // }
 }

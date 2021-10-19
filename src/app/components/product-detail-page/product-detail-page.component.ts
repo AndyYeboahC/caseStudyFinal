@@ -16,7 +16,6 @@ export class ProductDetailPageComponent implements OnInit {
 
   public productList: any;
 
-
   constructor(
     private route: ActivatedRoute,
     private productService: ProductService,
@@ -30,7 +29,7 @@ export class ProductDetailPageComponent implements OnInit {
       this.productList = res;
 
       this.productList.forEach((a: any) => {
-        Object.assign(a, {total: a.price});
+        Object.assign(a, { total: a.price });
       });
     });
   }
@@ -47,13 +46,11 @@ export class ProductDetailPageComponent implements OnInit {
   }
 
   addcart(product: any) {
-    if(this.productList.some((cartItem:any,) => cartItem.id === product.id)){
+    if (this.productList.some((cartItem: any) => cartItem.id === product.id)) {
       product.quantity++;
-
     } else {
       this.productService.addtoCart(product);
       product.quantity++;
-
     }
   }
 }
