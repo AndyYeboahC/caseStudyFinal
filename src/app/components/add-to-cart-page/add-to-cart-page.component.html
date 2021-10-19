@@ -17,7 +17,7 @@
                 <th>Product Image</th>
                 <th>Price</th>
                 <th>Quantity</th>
-                <th>Total</th>
+                <th>Sub-Total</th>
                 <th>Action</th>
               </tr>
             </thead>
@@ -34,7 +34,7 @@
                 </td>
                 <td>{{ item.price | currency: "PHP":"₱" }}</td>
                 <td>{{ item.quantity }}</td>
-                <td>{{ item.total | currency: "PHP":"₱" }}</td>
+                <td>{{ item.price * item.quantity | currency: "PHP":"₱" }}</td>
                 <td>
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                     <i class="fas fa-trash-alt"></i>
