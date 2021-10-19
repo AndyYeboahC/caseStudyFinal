@@ -1,4 +1,4 @@
-@import './../../../styles.scss';
+@import "./../../../styles.scss";
 
 $image-height: 600px;
 $image-width: 400px;
@@ -32,7 +32,7 @@ button {
 
 .img-container {
   min-height: fit-content;
-  overflow:hidden;
+  overflow: hidden;
   padding: 50px;
   img {
     height: $image-height;
@@ -60,7 +60,7 @@ button {
 
 h1 {
   text-align: center;
-  padding-bottom: .8em;
+  padding-bottom: 0.8em;
   color: $text-color;
 }
 
@@ -89,4 +89,3 @@ h1 {
   font-size: 150%;
   color: $primary-color;
 }
-
