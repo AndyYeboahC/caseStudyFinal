@@ -48,7 +48,7 @@
               <div *ngIf="product">
                 <div class="reviews" *ngFor="let reviews of product.reviews">
                   <h5 class="center">{{ reviews.userName }}</h5>
-                  <app-ngbd-rating [rating]="3" ></app-ngbd-rating>
+                  <!--<app-ngbd-rating [rating]="3" ></app-ngbd-rating>-->
                   <!--<star-rating [rating]="product.averageRating"></star-rating>-->
                   <p style="float:right">Date here</p>
                   <p>{{ reviews.comment }}</p>
