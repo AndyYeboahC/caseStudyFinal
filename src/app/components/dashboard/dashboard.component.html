@@ -1,5 +1,6 @@
 <section>
   <div class="main">
+    <!-- START OF 1ST PRODUCT HIGHLIGHT -->
     <div class="main-advert">
       <div class="main-advert-vid">
         <video autoplay muted loop class="main-advert-vid-video">
@@ -19,14 +20,12 @@
         </div>
       </div>
       <div class="products">
-        <!--container-->
         <a
           *ngFor="let product of products | slice: 0:1"
           routerLink="/detail/{{ product.id }}"
         >
           {{ getProducts() }}
           <div class="product">
-            <!--card-->
             <div class="product-thumbnail">
               <img
                 *ngIf="product.photo"
@@ -48,17 +47,16 @@
         </a>
       </div>
     </div>
-
+    <!-- END OF 1ST PRODUCT HIGHLIGHT -->
+    <!-- START OF PRODUCT LIST -->
     <div class="main-products">
       <div class="main-products-dashboard">
         <div class="products">
-          <!--container-->
           <a
             *ngFor="let product of products | slice: 1:7"
             routerLink="/detail/{{ product.id }}"
           >
             <div class="product">
-              <!--card-->
               <div class="product-thumbnail">
                 <img
                   *ngIf="product.photo"
@@ -81,17 +79,15 @@
         </div>
       </div>
     </div>
-
-    <!-- ============================================================= -->
+    <!-- END OF PRODUCT LIST -->
+    <!-- START OF 2ND PRODUCT HIGHLIGHT -->
     <div class="main-advert">
       <div class="products">
-        <!--container-->
         <a
           *ngFor="let product of products | slice: 7:8"
           routerLink="/detail/{{ product.id }}"
         >
           <div class="product">
-            <!--card-->
             <div class="product-thumbnail">
               <img
                 *ngIf="product.photo"
@@ -130,16 +126,18 @@
         </div>
       </div>
     </div>
+    <!-- END OF 2ND PRODUCT HIGHLIGHT -->
+    <!-- START OF PRODUCT LIST -->
     <div class="main-products">
       <div class="main-products-dashboard">
         <div class="products">
-          <!--container-->
+          =
           <a
             *ngFor="let product of products | slice: 8:12"
             routerLink="/detail/{{ product.id }}"
           >
             <div class="product">
-              <!--card-->
+              =
               <div class="product-thumbnail">
                 <img
                   *ngIf="product.photo"
@@ -162,6 +160,6 @@
         </div>
       </div>
     </div>
-    <!-- ======================================================================= -->
+    <!-- END OF PRODUCT LIST -->
   </div>
 </section>

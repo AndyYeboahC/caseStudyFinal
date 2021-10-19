@@ -7,7 +7,31 @@
   flex-direction: column;
 
   align-items: center;
+
+  &-cart-table-product {
+    margin-top: 20px;
+
+    width: 150vh;
+    text-align: center;
+  }
 }
+.header {
+  font-size: 100px;
+}
+.table {
+  &-heading {
+    font-size: $medium-font;
+    width: 50px;
+    background: $secondary-color;
+    color: $accent-color;
+  }
+  &-details {
+    font-size: $small-font;
+    vertical-align: center;
+    width: 100vh;
+  }
+}
+
 .productadded {
   width: auto;
   height: 200px;
@@ -18,12 +42,7 @@
 .center {
   text-align: center;
 }
-.cart-product {
-  margin-top: 20px;
 
-  width: 150vh;
-  text-align: center;
-}
 .card {
   margin: 20px;
   text-align: center;
@@ -40,21 +59,7 @@
   margin-block-start: 0;
   margin-block-end: 0;
 }
-.header {
-  font-size: 100px;
-}
-.heading {
-  font-size: $medium-font;
-  width: 50px;
-  background: $secondary-color;
-  color: $accent-color;
-}
 
-.details {
-  font-size: $small-font;
-  vertical-align: center;
-  width: 100vh;
-}
 .alignCenter {
   vertical-align: center;
 }
