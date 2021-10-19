@@ -48,11 +48,8 @@
               <div *ngIf="product">
                 <div class="reviews" *ngFor="let reviews of product.reviews">
                   <h5 class="center">{{ reviews.userName }}</h5>
-                  <p class="center">
-                    <star-rating [rating]="reviews.rating"></star-rating> ({{
-                      reviews.rating
-                    }}/5)
-                  </p>
+                  <star-rating [rating]="product.averageRating"></star-rating>
+                  <p style="float:right">Date here</p>
                   <p>{{ reviews.comment }}</p>
                 </div>
               </div>
