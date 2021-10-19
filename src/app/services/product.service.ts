@@ -23,7 +23,7 @@ export class ProductService {
     this.interactionService.add(`ProductService: fetched product id=${id}`);
     return of(product);
   }
-  
+
   // ADD TO CART SECTION CODE
   getItems() {
     return this.productList.asObservable();
@@ -38,7 +38,7 @@ export class ProductService {
     this.cartItemList.push(productItem);
     this.productList.next(this.cartItemList);
     this.getTotalPrice();
-    // console.log(this.cartItemList); 
+    // console.log(this.cartItemList);
   }
 
   getTotalPrice(): number {
@@ -46,7 +46,7 @@ export class ProductService {
     this.cartItemList.map((a: any) => {
       grandTotal += a.total * a.quantity;
     });
-    
+
     return grandTotal;
   }
 
@@ -72,7 +72,7 @@ export class ProductService {
     return this.searchTerm;
   }
 
-  getSearchTerm(){
+  getSearchTerm() {
     return this.searchTerm;
   }
 }

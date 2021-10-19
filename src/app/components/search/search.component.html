@@ -33,7 +33,7 @@
               </div>
 
               <div class="product-description">
-                <h1 class="product-name">{{ product.name }}</h1>
+                <h1 class="product-name">{{ product.name | titlecase }}</h1>
                 <br />
                 <h2>{{ product.price | currency: "PHP":"₱" }}</h2>
                 <star-rating [rating]="product.averageRating"></star-rating>

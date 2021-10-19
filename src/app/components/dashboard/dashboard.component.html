@@ -24,6 +24,7 @@
           *ngFor="let product of products | slice: 0:1"
           routerLink="/detail/{{ product.id }}"
         >
+          {{ getProducts() }}
           <div class="product">
             <!--card-->
             <div class="product-thumbnail">
@@ -37,7 +38,7 @@
             </div>
 
             <div class="product-description">
-              <h1 class="product-name">{{ product.name }}</h1>
+              <h1 class="product-name">{{ product.name | titlecase }}</h1>
               <br />
               <h2>{{ product.price | currency: "PHP":"₱" }}</h2>
               <star-rating [rating]="product.averageRating"></star-rating>
@@ -69,7 +70,7 @@
               </div>
 
               <div class="product-description">
-                <h1 class="product-name">{{ product.name }}</h1>
+                <h1 class="product-name">{{ product.name | titlecase }}</h1>
                 <br />
                 <h2>{{ product.price | currency: "PHP":"₱" }}</h2>
                 <star-rating [rating]="product.averageRating"></star-rating>
@@ -102,7 +103,7 @@
             </div>
 
             <div class="product-description">
-              <h1 class="product-name">{{ product.name }}</h1>
+              <h1 class="product-name">{{ product.name | titlecase }}</h1>
               <br />
               <h2>{{ product.price | currency: "PHP":"₱" }}</h2>
               <star-rating [rating]="product.averageRating"></star-rating>
@@ -150,7 +151,7 @@
               </div>
 
               <div class="product-description">
-                <h1 class="product-name">{{ product.name }}</h1>
+                <h1 class="product-name">{{ product.name | titlecase }}</h1>
                 <br />
                 <h2>{{ product.price | currency: "PHP":"₱" }}</h2>
                 <star-rating [rating]="product.averageRating"></star-rating>
