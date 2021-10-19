@@ -16,3 +16,9 @@ export class StarRatingComponent implements OnChanges {
 
 }
 
+/*
+export class NgbdRatingDecimal {
+  currentRate = 3.14;
+}
+*/
+

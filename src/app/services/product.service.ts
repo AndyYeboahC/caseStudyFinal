@@ -23,9 +23,8 @@ export class ProductService {
     this.interactionService.add(`ProductService: fetched product id=${id}`);
     return of(product);
   }
-
+  
   // ADD TO CART SECTION CODE
-
   getItems() {
     return this.productList.asObservable();
   }
@@ -47,6 +46,7 @@ export class ProductService {
     this.cartItemList.map((a: any) => {
       grandTotal += a.total * a.quantity;
     });
+    
     return grandTotal;
   }
 

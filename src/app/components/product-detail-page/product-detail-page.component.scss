@@ -2,20 +2,18 @@
 
 $image-height: 600px;
 $image-width: 400px;
+$side-padding: 150px;
 
 @mixin product-container() {
   display: flex;
   margin-right: auto;
   margin-left: auto;
+  padding-left: $side-padding;
+  padding-right: $side-padding;
 }
 
 body {
   background-color: $base-color;
-}
-
-label {
-  color: #435960;
-  font-weight: bold;
 }
 
 input {
@@ -34,27 +32,30 @@ button {
   min-height: fit-content;
   overflow: hidden;
   padding: 50px;
+  align-items: center;
   img {
-    height: $image-height;
+    height: 70vh;
+    width: auto;
     object-fit: cover;
+    float: right;
   }
 }
 
 .productDetails-container {
   @include product-container();
   min-height: fit-content;
-  text-align: center;
+  text-align: justify;
   color: $text-color;
 }
 
 .reviews-container {
   display: block;
-  padding: 5rem 5rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
   text-align: justify;
 }
 
 .addToCart-container {
-  align-content: center;
   padding-top: 20px;
 }
 
@@ -68,24 +69,27 @@ h1 {
   padding-top: 30px;
 }
 
-.productName {
-  padding-top: 25px;
-  font-weight: 800;
+.details {
+  padding: 40px;
+  .productName {
+    padding-top: 25px;
+    font-weight: 800;
+  }
 }
 
 .reviews {
   border-top: 1px solid $secondary-color;
   color: $text-color;
   font-weight: 300;
-  text-align: center;
+  text-align: justify;
   padding: 1.2rem;
   padding-top: 1.8rem;
 }
 
 .back {
-  padding: 30px;
+  padding: 15px;
   padding-left: 50px;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 150%;
   color: $primary-color;
 }

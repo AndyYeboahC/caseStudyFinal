@@ -29,11 +29,9 @@ export class ProductDetailPageComponent implements OnInit {
     this.productService.getItems().subscribe((res) => {
       this.productList = res;
 
-      this.productList.forEach((a: any,) => {
-        Object.assign(a, {total: a.price });
+      this.productList.forEach((a: any) => {
+        Object.assign(a, {total: a.price});
       });
-
-
     });
   }
 
@@ -49,16 +47,13 @@ export class ProductDetailPageComponent implements OnInit {
   }
 
   addcart(product: any) {
-  //CHECK IF EXISTING SI ITEM NA UNG ITEM USING cartItem.id
     if(this.productList.some((cartItem:any,) => cartItem.id === product.id)){
       product.quantity++;
 
-
-  // first attempt, quantity will be = to 1 because of line 32 to 33... what we need is grab that quantity then increment by 1
     } else {
-  // KUNG WALA, ILALAGAY NYA UNG ITEM NA UN SA ARRAY.. CALLING addtoCart
-      let cartItem = this.productService.addtoCart(product);
+      this.productService.addtoCart(product);
       product.quantity++;
+
     }
   }
 }
