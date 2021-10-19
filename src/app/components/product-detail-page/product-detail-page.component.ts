@@ -5,6 +5,7 @@ import { Product } from 'src/app/models/product.interface';
 import { ProductService } from 'src/app/services/product.service';
 import { StarRatingComponent } from './star-rating/star-rating.component';
 import { PRODUCTS } from 'src/app/models/product.mock';
+import { NgbRatingComponent } from './ngb-rating/ngb-rating.component';
 
 @Component({
   selector: 'app-product-detail-page',
