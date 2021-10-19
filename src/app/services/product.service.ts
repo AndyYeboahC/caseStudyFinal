@@ -65,14 +65,14 @@ export class ProductService {
   }
 
   // Search
-  searchTerm = '';
+  userInput = '';
 
-  updateSearchTerm(input: string) {
-    this.searchTerm = input;
-    return this.searchTerm;
+  updateUserInput(input: string) {
+    this.userInput = input;
+    return this.userInput;
   }
 
-  getSearchTerm(){
-    return this.searchTerm;
+  getUserInput(){
+    return this.userInput;
   }
 }

@@ -10,29 +10,29 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class SearchComponent implements  OnInit {
 
-  public _searchInput = '';
+  public searchInput = '';
   
-
   filteredProducts: Product[] = [];
   products: Product[] = [];
 
   constructor(private productService: ProductService, private router:Router) {
+  // returns to OnInit
     this.router.routeReuseStrategy.shouldReuseRoute = () => false;
   }
-
-  performSearch(searchBy: string): Product[] {
-    searchBy = searchBy.toLocaleLowerCase();
+  // filters the products array
+  performSearch(searchInput: string): Product[] {
+    searchInput = searchInput.toLocaleLowerCase();
     return this.products.filter((product: Product) =>
-      product.name.toLocaleLowerCase().includes(searchBy) || product.description.toLocaleLowerCase().includes(searchBy) );
-  }
- 
-  ngOnInit(): void {
-    this.getFilteredProducts();
-    this._searchInput = this.productService.getSearchTerm();
-    this.filteredProducts = this.performSearch(this._searchInput);
+      product.name.toLocaleLowerCase().includes(searchInput) || product.description.toLocaleLowerCase().includes(searchInput) );
   }
   
-  getFilteredProducts(): void {
+  ngOnInit(): void {
+    this.getProductsToSearch();
+    this.searchInput = this.productService.getUserInput();
+    this.filteredProducts = this.performSearch(this.searchInput);
+  }
+  
+  getProductsToSearch(): void {
     this.productService
       .getProducts()
       .subscribe((products) => (this.products = products));

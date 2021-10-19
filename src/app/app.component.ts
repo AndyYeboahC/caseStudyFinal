@@ -23,19 +23,19 @@ export class AppComponent implements OnInit {
   }
 
   // search bar
-  _searchInput: string = '';
+  searchInput: string = '';
   searchTerm: string = '';
 
-  get searchInput(): string {
-    return this._searchInput;
+  get _searchInput(): string {
+    return this.searchInput;
   }
-  set searchInput(value: string) {
-    this._searchInput = value;
+  set _searchInput(value: string) {
+    this.searchInput = value;
   }
 
-  getInput(searchInput: string) {
-    this.productService.updateSearchTerm(this._searchInput);
-    this.router.navigateByUrl('/search/'+this._searchInput);
+  getInput() {
+    this.productService.updateUserInput(this.searchInput);
+    this.router.navigateByUrl('/search/'+this.searchInput);
   }
 
 
