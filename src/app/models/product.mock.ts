@@ -2,35 +2,6 @@ import { Product } from './product.interface';
 
 export const PRODUCTS: Product[] = [
   {
-    id: 12021001,
-    photo: 'assets/images/uzumaki-naruto.png',
-    name: 'Uzumaki Naruto',
-    price: 2999,
-    description:
-      'A renewed edition of the previously released Uzumaki Naruto! Featuring repainted colors to enhance the appearance, this is the definitive edition of the figure. The accessories are also newly sculpted, including the happy coat and the arm parts. The facial printing has been improved as well! The set includes optional upper left and right arms, optional left and right arms, 3 pairs of optional hands, 3 optional faces, 2 kunai, shuriken, Rasengan, right hand for Rasengan, stand, folded arm parts, scroll, and a waist pouch. The product box will have a Bluefin warning label, which is proof that you are purchasing an officially licensed band a I product, distributed by its sole and authorized distributor.',
-    averageRating: 0,
-    quantity: 0,
-    reviews: [
-      {
-        userName: 'CamsAmnida',
-        rating: 5,
-        comment: 'Shugal dumating, pero bet ko ung item. bIBILI uL3t aKHowz',
-      },
-      {
-        userName: 'Yeboi19',
-        rating: 4,
-        comment:
-          'Super fast delivery!!! Really loved the product, and the seller was very responsive. Will definitely order agaiiiin!',
-      },
-      {
-        userName: 'Albayde705',
-        rating: 2,
-        comment:
-          'The package took too long to arrive, but  the product was fine',
-      },
-    ],
-  },
-  {
     id: 72021007,
     photo: 'assets/images/hyuga-hinata.png',
     name: 'Hyuga Hinata',
@@ -89,6 +60,35 @@ export const PRODUCTS: Product[] = [
         userName: 'Albayde705',
         rating: 5,
         comment: 'SOLLIIIIIIIDDDDDDDDDDDDDDDDDDDD',
+      },
+    ],
+  },
+  {
+    id: 12021001,
+    photo: 'assets/images/uzumaki-naruto.png',
+    name: 'Uzumaki Naruto',
+    price: 2999,
+    description:
+      'A renewed edition of the previously released Uzumaki Naruto! Featuring repainted colors to enhance the appearance, this is the definitive edition of the figure. The accessories are also newly sculpted, including the happy coat and the arm parts. The facial printing has been improved as well! The set includes optional upper left and right arms, optional left and right arms, 3 pairs of optional hands, 3 optional faces, 2 kunai, shuriken, Rasengan, right hand for Rasengan, stand, folded arm parts, scroll, and a waist pouch. The product box will have a Bluefin warning label, which is proof that you are purchasing an officially licensed band a I product, distributed by its sole and authorized distributor.',
+    averageRating: 0,
+    quantity: 0,
+    reviews: [
+      {
+        userName: 'CamsAmnida',
+        rating: 5,
+        comment: 'Shugal dumating, pero bet ko ung item. bIBILI uL3t aKHowz',
+      },
+      {
+        userName: 'Yeboi19',
+        rating: 4,
+        comment:
+          'Super fast delivery!!! Really loved the product, and the seller was very responsive. Will definitely order agaiiiin!',
+      },
+      {
+        userName: 'Albayde705',
+        rating: 2,
+        comment:
+          'The package took too long to arrive, but  the product was fine',
       },
     ],
   },
